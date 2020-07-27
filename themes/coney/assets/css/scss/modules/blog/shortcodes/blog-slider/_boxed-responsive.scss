@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Blog Slider Boxed shortcode responsive style - start
+   ========================================================================== */
+
+.qodef-blog-slider-holder {
+
+    &.qodef-bls-boxed {
+        .qodef-blog-slider-item {
+            .qodef-item-text-wrapper {
+                @include ipad-portrait {
+                    padding: 25px;
+                }
+                @include phone-landscape {
+                    padding: 0;
+                }
+            }
+            .qodef-item-text-holder {
+                @include ipad-portrait {
+                    padding: 25px 50px;
+                }
+                @include phone-landscape {
+                    padding: 8px 20px 9px;
+                }
+
+                .qodef-item-info-section-top {
+                    .qodef-post-info-category {
+                        a {
+                            @include ipad-portrait {
+                                font-size: 11px;
+                            }
+                            @include phone-landscape {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .qodef-item-info-section-bottom {
+                    .qodef-post-info-author,
+                    .qodef-post-info-date {
+                        @include ipad-portrait {
+                            font-size: 11px;
+                        }
+                        @include phone-landscape {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .qodef-section-button-holder {
+                @include phone-landscape {
+                    display: none;
+                }
+            }
+            .qodef-item-title a {
+                @include ipad-portrait {
+                    font-size: 23px !important;
+                    line-height: 34px !important;
+                }
+                @include phone-landscape {
+                    font-size: 20px !important;
+                    line-height: 31px !important;
+                }
+            }
+        }
+
+        .owl-dots {
+            @include ipad-portrait {
+                bottom: 0;
+                span {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 6px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Blog Slider Boxed shortcode responsive style - end
+   ========================================================================== */

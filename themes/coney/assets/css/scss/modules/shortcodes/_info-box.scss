@@ -1,0 +1,36 @@
+.qodef-info-box {
+
+    .qodef-info-box-holder {
+        border: 1px solid #e9e9e9;
+        box-sizing: border-box;
+        padding: 0 22px 25px 22px;
+        text-align: center;
+    }
+
+    .qodef-info-box-icon {
+        @include qodefTransform(translateY(-50%));
+        .qodef-icon {
+            font-size: 22px;
+            display: inline-block;
+            width: 58px;
+            height: 58px;
+            line-height: 58px;
+            background: #000;
+            border-radius: 50%;
+            color: #fff;
+        }
+    }
+
+    .qodef-info-box-title {
+        margin-top: -5px;
+        margin-bottom: 4px;
+        > * {
+            margin: 0;
+        }
+    }
+
+    .qodef-info-box-button {
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+}

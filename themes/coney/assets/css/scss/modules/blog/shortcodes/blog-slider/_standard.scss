@@ -1,0 +1,123 @@
+.qodef-blog-slider-holder {
+    &.qodef-bls-standard:not(.qodef-bls-in-grid) {
+        .qodef-blog-slider-item {
+            .qodef-item-text-holder-inner {
+                @include qodefTableCellLayout();
+                padding-left: 23%;
+                text-align: left;
+                .qodef-item-info-section-top {
+                    margin-bottom: 25px;
+                    a {
+                        color: inherit;
+                    }
+                    .qodef-post-info-category {
+                        a {
+                            font-family: Montserrat, sans-serif;
+                            font-size: 17px;
+                            letter-spacing: 1px;
+                            font-weight: 700;
+                            line-height: 18px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .qodef-item-title {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                }
+                .qodef-item-info-section-bottom {
+                    margin: 14px 0 15px;
+                    letter-spacing: 1px;
+                    a {
+                        color: inherit;
+                    }
+                    .qodef-post-info-author,
+                    .qodef-post-info-date {
+                        display: inline-block;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+
+                    .qodef-post-info-author {
+                        &:after {
+                            content: "/";
+                        }
+                    }
+                }
+            }
+            .qodef-item-text-holder {
+                position: relative;
+                display: table;
+                table-layout: fixed;
+                height: 100%;
+                width: 47.7%;
+            }
+        }
+
+    }
+    &.qodef-bls-in-grid {
+        .qodef-blog-slider-item {
+            .qodef-item-text-holder-inner {
+                position: relative;
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                text-align: left;
+                .qodef-main-text-holder {
+                    width: 57%;
+                }
+                .qodef-item-info-section-top {
+                    margin-bottom: 14px;
+                    a {
+                        color: inherit;
+                    }
+                    .qodef-post-info-category {
+                        a {
+                            font-family: Montserrat, sans-serif;
+                            font-size: 15px;
+                            font-weight: 700;
+                            line-height: 18px;
+                            text-transform: uppercase;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .qodef-item-title {
+                    text-transform: uppercase;
+                }
+                .qodef-item-info-section-bottom {
+                    margin: 18px 0 15px;
+                    a {
+                        color: inherit;
+                    }
+                    .qodef-post-info-author,
+                    .qodef-post-info-date {
+                        display: inline-block;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    .qodef-post-info-author {
+                        &:after {
+                            content: "/";
+                        }
+                    }
+                }
+            }
+            .qodef-item-text-holder {
+                position: relative;
+                display: table;
+                table-layout: fixed;
+                height: 100%;
+                width: 100%;
+                &.qodef-container {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

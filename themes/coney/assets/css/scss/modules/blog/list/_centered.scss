@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Blog List - Centered style - begin
+   ========================================================================== */
+
+.qodef-blog-holder {
+    
+    &.qodef-blog-centered {
+	    display: block;
+	    width: 66%;
+	    margin: 0 auto;
+	    text-align: center;
+
+        article {
+            margin-bottom: 58px;
+            padding-bottom: 0;
+            border-bottom: 1px solid #ededed;
+
+            .qodef-post-info {
+                margin-bottom: 40px;
+	            
+                > div {
+                    width: 100%;
+                }
+            }
+
+            &.format-link {
+
+                .qodef-post-text {
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    padding: 30px 0 73px;
+                    background-color: #ffffff;
+                    .qodef-post-title {
+                        margin-top: 20px;
+                    }
+                }
+
+                .qodef-post-text-inner {
+                    padding-left: 0;
+                }
+
+                .qodef-post-mark {
+                    display: block;
+                    font-size: 48px;
+                    color: #003cd4;
+                }
+            }
+
+            &.format-quote {
+
+                .qodef-post-text {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 0 82px;
+                    background-color: #ffffff;
+                    text-align: center;
+                    .qodef-post-title {
+                        margin-bottom: 19px;
+                    }
+                }
+
+                .qodef-post-text-inner {
+                    padding-left: 0;
+                }
+
+                .qodef-post-mark {
+                    display: block;
+                    font-size: 68px;
+                    color: #003cd4;
+                }
+
+                .qodef-quote-author {
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 700;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: $default-heading-color;
+                }
+            }
+
+            &.format-image {
+               .qodef-post-banner-image {
+                 padding: 45px 0;
+                  img {
+                    display: block;
+                  }
+               }
+            }
+
+            &.format-link,
+            &.format-quote {
+               .qodef-post-info {
+                 font-family: Montserrat, sans-serif;
+                 font-weight: 700;
+                 font-size: 13px;
+                 color: #003cd4;
+                 text-decoration: underline;
+                 text-transform: uppercase;
+                 margin-bottom: 15px;
+               }
+
+                .qodef-post-title {
+                    a:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+            &.format-audio {
+                &.qodef-post-no-media.has-post-thumbnail {
+                    .qodef-post-heading {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            &.qodef-post-has-media {
+                .qodef-post-heading {
+                    margin-bottom: 23px;
+                }
+            }
+
+            .qodef-post-info {
+                padding: 0;
+                .qodef-post-info-category {
+                  margin-bottom: 13px;
+                   a {
+                     font-family: Montserrat, sans-serif;
+                     font-weight: 700;
+                     font-size: 13px;
+                     color: #003cd4;
+                     text-decoration: underline;
+                     text-transform: uppercase;
+                   }
+                }
+                .qodef-post-author-date-holder{
+                    div {
+                      font-family: Montserrat, sans-serif;
+                      font-weight: 700;
+                      display: inline-block;
+                      font-size: 13px;
+                      color: #545454;
+                      text-transform: uppercase;
+
+                        a:hover {
+                            color: #bababa;
+                        }
+                    }
+                    .qodef-post-info-author {
+                      &:after {
+                        content: "/";
+                      }
+                    }
+                }
+            }
+	        
+            .qodef-post-title {
+                margin:0 0 10px;
+                a:hover {
+                  color: #545454;
+                }
+            }
+	        
+            .qodef-post-info-bottom {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                height: 100%;
+                margin-top: 44px;
+                padding:0 10px 40px;
+                border-bottom: 0;
+            }
+
+            .qodef-info-bottom-item {
+                display: table-cell;
+                width: 33.3%;
+                height: 100%;
+                vertical-align: middle;
+                font-family: Montserrat, sans-serif;
+                font-weight: 700;
+                color: #000000;
+
+                &:first-child {
+                    font-size:11px;
+                    text-align: left;
+                    text-transform: uppercase;
+                  .qodef-blog-share {
+                    display: inline-block;
+                  }
+                }
+	            
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+
+        .qodef-blog-pagination-holder {
+            .qodef-blog-pagination {
+                margin: 0 0 57px;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog List - Centered style - end
+   ========================================================================== */

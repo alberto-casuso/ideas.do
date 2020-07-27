@@ -1,0 +1,147 @@
+/* Related posts carousel styles - begin
+	====================================================================== */
+
+.qodef-related-posts-holder.qodef-related-posts-carousel {
+    @include qodefRelativeHolderLayout();
+    padding: 0;
+    box-sizing: border-box;
+
+    .qodef-related-posts-holder-inner {
+        padding: 24px 0 9px;
+    }
+
+    .qodef-related-posts-title {
+        margin: 0 0 27px;
+
+        > * {
+            margin: 0;
+            font-size: 12px;
+            color: #000;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+
+    .qodef-related-posts-inner {
+        margin: 0 -10px;
+    }
+
+    .qodef-related-post {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        margin: 0 0 5px;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+        .qodef-related-post-inner {
+            position: relative;
+        }
+    
+        .touch & {
+            cursor: pointer;
+        }
+    
+        &:hover {
+        
+            .qodef-related-post-holder-info {
+                opacity: 1;
+            }
+
+            .qodef-related-post-image a:after {
+                opacity: 1;
+            }
+
+        }
+    
+        .qodef-related-post-image {
+            @include qodefRelativeHolderLayout();
+            overflow: hidden;
+        
+            a {
+                position: relative;
+                display: block;
+            
+                &:after {
+                    @include qodefAbsoluteHolderLayout();
+                    content: '';
+                    opacity: 0;
+                    background-color: rgba($default-heading-color, 0.4);
+                    @include qodefTransition(opacity 0.3s ease);
+                }
+            }
+        
+            img {
+                display: block;
+            }
+        }
+
+        .qodef-related-post-holder-info {
+            position: absolute;
+            top: 50%;
+            @include qodefTransform(translateY(-50%));
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            @include qodefTransition(opacity 0.3s ease);
+    
+            .qodef-post-title {
+                font-weight: 700;
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                line-height: 18px;
+                padding: 0 10px;
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    
+        
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin: 16px 0 0;
+
+        .owl-dot {
+            display: inline-block;
+            vertical-align: middle;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                margin: 0 9px;
+                border-radius: 3em;
+                background-color: rgba(0,0,0,0.5);
+                @include qodefTransition(all 0.2s ease);
+                box-sizing: border-box;
+            }
+
+            &:hover,
+            &.active {
+
+                span {
+                    background-color: #000;
+                    @include qodefTransform(scale(1.3, 1.3));
+                }
+            }
+        }
+    }
+}
+
+.qodef-columns-wrapper:not(.qodef-content-columns-100) > .qodef-columns-inner > .qodef-column-content1 .qodef-related-posts-holder.qodef-related-posts-carousel,
+.qodef-columns-wrapper:not(.qodef-content-columns-100) > .qodef-columns-inner > .qodef-column-content2 .qodef-related-posts-holder.qodef-related-posts-carousel {
+    
+    .qodef-related-post {
+        width: 100%;
+    }
+}
+
+/* Related posts carousel styles - end
+	====================================================================== */

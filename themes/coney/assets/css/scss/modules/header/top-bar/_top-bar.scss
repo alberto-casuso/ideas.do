@@ -1,0 +1,140 @@
+$top-bar-height: 43px;
+
+.qodef-top-bar {
+    position: relative;
+    height: $top-bar-height;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    background-color: $default-heading-color;
+    z-index: 111;
+
+    > .qodef-vertical-align-containers {
+        padding: 0 15px;
+    }
+
+    .qodef-grid {
+        height: 100%;
+
+        .qodef-vertical-align-containers {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .widget {
+        display: inline-block;
+
+        &.widget_nav_menu {
+            ul {
+                margin: 0;
+            }
+            li {
+                list-style: none;
+                padding: 0 10px 0 14px;
+                display: inline-block;
+                border-left: 1px solid #ababab;
+                line-height: 11px;
+                @include phone-landscape {
+                    padding: 0 7px 0 10px;
+                }
+            }
+        }
+    }
+
+    a {
+        color: $header-light-color !important; //Beacause of inline color styles
+    }
+
+    .qodef-popup-opener {
+        margin-left: 5px;
+        padding-left: 15px;
+        border-left: 1px solid #ababab;
+        line-height: 1em;
+        @include ipad-portrait {
+            padding-left: 8px;
+        }
+    }
+
+    .qodef-social-icon-widget-holder {
+        font-size: 15px;
+        margin: 0 10px 0 0;
+        @include phone-landscape {
+            font-size: 13px;
+            margin: 0 5px 0 0;
+        }
+    }
+}
+
+.qodef-top-dark .qodef-top-bar {
+    color: $header-light-color !important; //Beacause of inline color styles
+
+    .widget {
+        color: $header-light-color !important; //Beacause of inline color styles
+
+        p,
+        a,
+        span,
+        i,
+        .widgettitle {
+            color: $header-light-color !important; //Beacause of inline color styles
+        }
+
+        a:hover {
+            color: $header-light-hover-color !important; //Beacause of inline color styles
+        }
+    }
+
+    .qodef-social-icon-widget-holder {
+        color: $header-light-color !important; //Beacause of inline color styles
+
+        &:hover {
+            color: $header-light-hover-color !important; //Beacause of inline color styles
+        }
+    }
+
+    .qodef-popup-opener {
+        color: $header-light-color !important; //Beacause of inline color styles
+
+        &:hover {
+            color: $header-light-hover-color !important; //Beacause of inline color styles
+        }
+    }
+}
+
+.qodef-top-light .qodef-top-bar {
+    color: #868686 !important; //Beacause of inline color styles
+    background-color: #fff;
+    border-bottom: 1px solid #dfdfdf;
+
+    .widget {
+        color: #868686 !important; //Beacause of inline color styles
+
+        p,
+        a,
+        span,
+        i,
+        .widgettitle {
+            color: #868686 !important; //Beacause of inline color styles
+        }
+
+        a:hover {
+            color: $first-main-color !important; //Beacause of inline color styles
+        }
+    }
+
+    .qodef-social-icon-widget-holder {
+        color: $header-dark-color !important; //Beacause of inline color styles
+
+        &:hover {
+            color: $first-main-color !important; //Beacause of inline color styles
+        }
+    }
+    .qodef-popup-opener {
+        border-left: 1px solid #ababab;
+        color: #868686 !important;
+        &:hover {
+            color: $first-main-color !important; //Beacause of inline color styles
+        }
+    }
+}

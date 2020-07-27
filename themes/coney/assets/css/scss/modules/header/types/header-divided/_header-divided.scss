@@ -1,0 +1,68 @@
+.qodef-header-divided {
+
+    .qodef-menu-area {
+        opacity: 0;
+
+    	.qodef-grid {
+    		height: 100%;
+    	}
+    }
+
+    .qodef-logo-wrapper {
+
+        a {
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .qodef-main-menu {
+        width: auto;
+    }
+
+    .qodef-vertical-align-containers {
+
+        .qodef-position-left {
+            text-align: right;
+
+            .qodef-position-left-inner {
+                height: 100%;
+            }
+        }
+
+        .qodef-position-right {
+            text-align: left;
+            
+            .qodef-position-right-inner {
+                height: 100%;
+            }
+        }
+    }
+
+    .qodef-sticky-header {
+
+        .qodef-vertical-align-containers {
+
+            .qodef-position-left {
+
+                .qodef-position-left-inner {
+                    height: auto;
+                }
+            }
+
+            .qodef-position-right {
+
+                .qodef-position-right-inner {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .qodef-page-header .qodef-vertical-align-containers .qodef-position-center {
+        position: absolute;
+        width: 100%;
+    }
+}

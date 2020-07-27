@@ -1,0 +1,440 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"comment",
+				"comment_id"
+			],
+			[
+				"wpcd",
+				"wpcd_form_settings"
+			],
+			[
+				"form_",
+				"form_type"
+			],
+			[
+				"wp",
+				"wp-comment-designer"
+			],
+			[
+				"o",
+				"optgroup\tTag"
+			],
+			[
+				"hide",
+				"hide_comments"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"ger",
+				"general-menu-wrap"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"To",
+				"Together"
+			],
+			[
+				"ta",
+				"taxonomy_name"
+			],
+			[
+				"selected",
+				"selected_locations"
+			],
+			[
+				"movies",
+				"movies_category"
+			],
+			[
+				"Print",
+				"print_array"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"ecr-ro",
+				"ecr-row-even"
+			],
+			[
+				"count_",
+				"count_option_together"
+			],
+			[
+				"trigger",
+				"trigger_type"
+			],
+			[
+				"res",
+				"responsive"
+			],
+			[
+				"ecr-ki",
+				"ecr-like-dislike-wrapper"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"Resc",
+				"Restriction"
+			],
+			[
+				"reac",
+				"reaction_layout_number"
+			],
+			[
+				"reaction",
+				"reaction_id"
+			],
+			[
+				"nu",
+				"number_format"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"comm",
+				"comment_id"
+			],
+			[
+				"ecr",
+				"ecr_settings"
+			],
+			[
+				"print",
+				"print_array"
+			],
+			[
+				"custom",
+				"custom_css"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"dislike",
+				"dislike_count"
+			],
+			[
+				"latest",
+				"latest_dislike_count"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"count",
+				"count_option"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 404.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wpdiscuz/includes/class.WpdiscuzCss.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/vertex/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/superior/index.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/index.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/superior/inc/structure/content-extensions.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/superior/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/wpcd_flag_comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/wpcd_frontend_sorting.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/Avada/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/Avada/includes/class-avada-template.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/Avada/includes/deprecated.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/wp-comment-designer.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/js/wpcd-frontend.js",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/js/ecr-frontend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/main_settings/panel/wpcd_general.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/everest-comment-rating.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/wpcd_comment_text.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/wpcd_comment_like_dislike.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/wpcd_comment_listing.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/js/wpcd-comment-form/wpcd_form_backend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/js/wpcd-backend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/Comment_form_div.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-includes/comment.php",
+		"/C/xampp/htdocs/everest-comment-rating-lite/wp-content/plugins/everest-comment-rating-lite/js/ecr-frontend.js",
+		"/C/xampp/htdocs/everest-comment-rating-lite/wp-content/plugins/everest-comment-rating-lite/everest-comment-rating-lite.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/wp-comment-rating/wp-comment-rating.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/custom_settings/wpcd_custom_settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/twentyfifteen/inc/template-tags.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/Comment_form_div.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-textarea.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-url.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/default/wpcd_name.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/default/wpcd_url.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/default/wpcd_commentarea.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/default/wpcd_email.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-includes/comment-template.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-radio.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/twentysixteen/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-advance-comment/functions/frontend.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-select-option.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-config.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-text.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-textarea.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-text.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-select-option.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-radio.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-checkbox.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/wpcd_form_settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/wpcd_form_field.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/inc/backend/panel/ecr-display.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wpdiscuz/utils/class.WpdiscuzHelper.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/Avada/includes/class-avada-tgm-plugin-activation.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/betheme-PURCHASHED/functions/admin/tgm/class-tgm-plugin-activation.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/wpcd_form_customization.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-includes/admin-bar.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/inc/frontend/like-dislike-html.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/comment-designer.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-email.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/js/wpcd-comment-form/wpcd_form_frontend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/frontend/fields/wpcd-checkbox.php",
+		"/C/xampp/htdocs/Learning_Plugin/wp-content/plugins/shraya-contact-form/shraya-contact-form.php",
+		"/C/xampp/htdocs/Learning_Plugin/wp-content/plugins/shraya-contact-form/js/scf-frontend.js",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/inc/backend/panel/ecr-configuration.php",
+		"/C/xampp/htdocs/myproject/admin/page/adminmanager/add.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/debugging.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/default/wpcd_comment_area.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-text-field.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd-text-area.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/default/wpcd_website.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/betheme-PURCHASHED/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/wpcd_how_to_use.php",
+		"/C/xampp/htdocs/Learning_Plugin/wp-content/plugins/shraya-contact-form/inc/frontend/contact-form.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/disqus-comment-system/disqus.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/disqus-comment-system/comments.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/themes/twentyseventeen/comments.php",
+		"/C/xampp/htdocs/Learning_Plugin/wp-content/plugins/shraya-contact-form/inc/backend/settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-advance-comment/functions/options.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/js/backend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/css/wpcd-backend.css",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/wpcd_form_general.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/css/ecr-backend.css",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/wpcd_form_display.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/main_settings/wpcd_settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/main_settings/panel/wpcd_display.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/main_settings/panel/wpcd_pagination.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/inc/backend/settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/css/wpcd-frontend.css",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/ultimate-form-builder.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-reference-elements/html-fields/checkbox.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/plugins/everest-comment-rating/js/ecr-backend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/js/admin-extra.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/js/admin-script.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-elements/html-fields/checkbox.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/cores/save-form.php",
+		"/C/xampp/htdocs/Learning_Plugin/wp-content/plugins/shraya-contact-form/inc/backend/email-entries.php",
+		"/C/xampp/htdocs/myproject/admin/page/pagemanager/edit-action.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-advance-comment/functions/meta-box.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/themes/wp-pricing-tables/header.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-advance-comment/js/backend.js",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-popup-banners-pro/wp-popup-banners-pro.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-popup-banners-pro/inc/backend/main-page.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-popup-banners-pro/inc/backend/tabs/manage-option.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-popup-banners-pro/inc/backend/tabs/setting.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/testing.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/boxes/form-fields-html.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-builder.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-list.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-entries-list.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/accesspress-anonymous-post-pro.php",
+		"/C/xampp/htdocs/everest-comment-rating/wp-content/themes/wp-pricing-tables/functions.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/panel/fields/custom/wpcd_text_field.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/boards/form-fields-html.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/boards/email-settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/ultimate-form-builder/inc/views/backend/form-elements/html-fields/captcha.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/wpcd_comment_form_builder.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-comment-designer/inc/backend/form_builder/wpcd_custom_fields.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/wp-advance-comment/functions/edit-comment-meta.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/extras/google-fonts-dropdown.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/cores/login.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/boards/form-settings.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/file-uploader/file-uploader-class.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/cores/activation.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/cores/content-filter.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/cores/file-uploader.php",
+		"/C/xampp/htdocs/wp-comment-designer/wp-content/plugins/accesspress-anonymous-post-pro/inc/cores/form-preview.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 140.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 132.0
+	},
+	"pinned_build_system": "",
+	"project": "wpcd_form_frontend.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 307.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Twitter widget style - begin
+   ========================================================================== */
+
+.widget.widget_qodef_twitter_widget {
+
+    > h4 {
+        margin: 0 0 8px;
+    }
+
+    .qodef-twitter-widget {
+        @include qodefRelativeHolderLayout();
+        margin: 0;
+
+        li {
+            @include qodefRelativeHolderLayout();
+
+            &:not(:last-child) {
+                margin: 0 0 25px !important;
+            }
+
+            .qodef-tweet-text {
+                position: relative;
+
+                a {
+                    position: relative;
+                    line-height: inherit;
+                    color: inherit;
+
+                    &.qodef-tweet-time {
+                        display: block;
+
+                        span {
+                            margin: 0 2px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.qodef-twitter-standard {
+
+            li {
+
+                .qodef-twitter-icon {
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+
+                    i {
+                        font-size: 18px;
+                        color: #003cd4;
+                    }
+                }
+
+                .qodef-tweet-text {
+                    text-indent: 25px;
+                    line-height: 26px;
+                    color: #454545;
+
+                    a,
+                    span {
+                        color: #454545;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.qodef-twitter-slider {
+            @include qodefRelativeHolderLayout();
+            padding: 0 50px;
+            text-align: center;
+            visibility: hidden;
+            box-sizing: border-box;
+
+            li {
+                overflow: hidden;
+
+                .qodef-twitter-icon {
+
+                    i {
+                        font-size: 72px;
+                        color: #000;
+                    }
+                }
+
+                .qodef-tweet-text {
+                    font-size: 13px;
+                    padding: 30px 50px;
+
+                    a,
+                    span {
+                        color: $first-main-color;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: $default-heading-color;
+                        }
+
+                        &.qodef-tweet-time {
+                            margin: 21px 0 0;
+                        }
+
+                        &.qodef-tweet-author {
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            font-family: Montserrat, sans-serif;
+                            font-weight: 700;
+                            color: #282d33;
+                            display: block;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+
+            .owl-stage-outer {
+                z-index: 1;
+            }
+
+            .owl-dots {
+                text-align: center;
+                margin: 25px 0 0;
+
+                .owl-dot {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 8px;
+                        height: 8px;
+                        margin: 0 7px;
+                        border-radius: 3em;
+                        background-color: #7f7f7f;
+                        @include qodefTransition(background-color .2s ease-out, width .2s ease-out, height 0.2 ease-out);
+                        box-sizing: border-box;
+                    }
+
+                    &:hover,
+                    &.active {
+
+                        span {
+                            width: 12px;
+                            height: 12px;
+                            margin: 0 5px;
+                            background-color: #101010;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Twitter widget style - end
+   ========================================================================== */

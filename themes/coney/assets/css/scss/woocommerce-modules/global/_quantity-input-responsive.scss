@@ -1,0 +1,26 @@
+/* ==========================================================================
+   WooCommerce Quantity Inputs responsive styles - begin
+   ========================================================================== */
+
+@include phone-landscape {
+
+    .woocommerce-page .qodef-content,
+    div.woocommerce {
+
+        .qodef-quantity-buttons {
+
+            .qodef-quantity-input,
+            .qodef-quantity-minus,
+            .qodef-quantity-plus {
+                font-size: 13px;
+                height: 19px;
+                width: 19px;
+                margin: 0;
+                line-height: 19px;
+            }
+        }
+    }
+}   
+/* ==========================================================================
+   WooCommerce Quantity Inputs responsive styles - end
+   ========================================================================== */

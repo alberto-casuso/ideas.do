@@ -1,0 +1,42 @@
+.qodef-blog-slider-holder {
+    &.qodef-bls-simple {
+      .qodef-blog-slider-item {
+        .qodef-item-text-holder {
+          @include qodefTableLayout;
+          &.qodef-container {
+            background-color: transparent;
+          }
+        }
+        .qodef-item-text-holder-inner {
+          position: relative;
+          display: table-cell;
+          height: 100%;
+          vertical-align: middle;
+          text-align: center;
+        }
+        .qodef-item-info-section-top {
+          margin-bottom: 20px;
+          a {
+            color: inherit;
+          }
+          .qodef-post-info-date {
+            a {
+              font-family: Montserrat, sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 18px;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .qodef-section-button-holder {
+            margin-top: 34px;
+           .qodef-btn.qodef-btn-solid:not(.qodef-btn-custom-border-hover):hover {
+              background-color: #ffffff!important;
+             border-color:#ffffff!important;
+             color: #000000!important;
+           }
+        }
+      }
+    }
+}

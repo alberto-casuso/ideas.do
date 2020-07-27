@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Default WordPress widgets styles - begin
+   ========================================================================== */
+
+.widget {
+    margin: 0 0 $widget-bottom-margin;
+    padding: 0;
+
+    .qodef-widget-title-holder {
+        margin-bottom: 0;
+
+        .qodef-widget-title {
+            color: $widget-heading-color;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .qodef-separator {
+            border-color: $widget-text-color;
+            border-bottom-width: 3px;
+            width: 30px;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            display: block;
+            line-height: $widget-list-item-height;
+            margin: 0;
+            padding: $widget-list-item-padding 0;
+
+            &:last-child {
+                border: 0;
+                padding-bottom: 0;
+            }
+
+            a {
+                color: $widget-link-color;
+
+                &:hover {
+                    color: $widget-link-hover-color;
+                }
+            }
+        }
+
+        .children,
+        .sub-menu {
+            border-top: 1px solid $widget-list-item-border-color;
+            margin-top: $widget-list-item-padding;
+        }
+    }
+
+
+
+    // widgets with lists and animation on link hover
+    &.widget_pages,
+    &.widget_archive,
+    &.widget_categories,
+    &.widget_meta,
+    &.widget_recent_entries,
+    &.widget_nav_menu {
+
+        ul {
+
+            li {
+                overflow: hidden;
+
+                a {
+                    display: inline;
+                    overflow: hidden;
+                    padding: 0;
+                    position: relative;
+
+                    @include qodefTransition(padding .2s ease-out, color .2s ease-out);
+
+                }
+            }
+        }
+    }
+
+    // calendar
+    #wp-calendar {
+        text-align: center;
+        width: 100%;
+
+        caption {
+            margin: 0 0 $widget-list-item-padding;
+
+        }
+
+        th, td {
+            padding: 3px 4px;
+        }
+
+        td#today {
+            color: $widget-text-color;
+            background-color: $widget-list-item-background-color;
+        }
+
+        tfoot a {
+            color: $widget-link-color;
+
+            &:hover {
+                color: $widget-link-hover-color;
+            }
+        }
+    }
+
+    // rss
+    &.widget_rss {
+
+        .rss-widget-icon {
+            display: inline-block;
+        }
+
+        .rss-date {
+            display: block;
+            margin-bottom: $widget-list-item-padding;
+        }
+
+        cite {
+            display: block;
+            margin-top: calc(#{$widget-list-item-padding} / 2);
+        }
+    }
+
+    // search
+    &.widget_search {
+
+        .input-holder {
+            border-color: $widget-list-item-border-color;
+            border-style: $widget-list-item-border-style;
+            border-width: $widget-list-item-border-width;
+            border-radius: 3px;
+
+            input,
+            button {
+                background-color: transparent;
+                border: 0;
+                border-radius: 3px;
+                box-sizing: border-box;
+                color: $widget-text-color;
+                display: inline-block;
+                float: left;
+                font-family: $default-text-font;
+                font-size: 15px;
+                font-weight: inherit;
+                height: $widget-search-form-height;
+                line-height: calc(#{$widget-search-form-height} - 2px);
+                outline: 0;
+                position: relative;
+                vertical-align: top;
+                -webkit-appearance: none;
+
+                @include qodefTransition(color .2s ease-in-out);
+            }
+
+            input.search-field {
+                width: calc(100% - #{$widget-search-form-height});
+                padding: 0 0 0 10px;
+
+                @include qodefPlaceholder {
+                    color: $widget-text-color;
+                }
+            }
+
+            button {
+                background: $widget-list-item-background-color;
+                color: $default-heading-color;
+                cursor: pointer;
+                font-size: 14px;
+                width: $widget-search-form-height;
+                padding: 0;
+
+                @include qodefTransition(color .2s ease-in-out);
+
+                &:hover {
+                    color: $widget-link-hover-color;
+                }
+
+                span {
+                    display: block;
+                    left: 0;
+                    line-height: inherit;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+
+                    &:before {
+                        display: block;
+                        line-height: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+    // combobox
+    &.widget_archive,
+    &.widget_categories,
+    &.widget_text {
+
+        select {
+            background-color: transparent;
+            border-color: $widget-list-item-border-color;
+            border-style: $widget-list-item-border-style;
+            border-width: $widget-list-item-border-width;
+            border-radius: 0;
+            box-sizing: border-box;
+            color: $widget-text-color;
+            display: inline-block;
+            font-family: $default-text-font;
+            font-size: 15px;
+            font-weight: inherit;
+            height: $widget-search-form-height;
+            line-height: calc(#{$widget-search-form-height} - 2px);
+            margin-top: $widget-list-item-padding;
+            outline: 0;
+            padding: 0 0 0 21px;
+            position: relative;
+            vertical-align: top;
+            width: 100%;
+
+            @include qodefTransition(color .2s ease-in-out);
+
+            option {
+            }
+        }
+    }
+
+    &.widget_categories {
+        ul {
+            li a{
+               &:hover {
+                   text-decoration: underline;
+               }
+            }
+        }
+    }
+
+    // tag cloud
+    &.widget_tag_cloud {
+
+        a {
+            border-radius: 2px;
+            color: $widget-text-color;
+            display: inline-block;
+            font-size: 14px!important;
+            font-family: $default-text-font;
+            font-weight: inherit;
+            line-height: $widget-tag-cloud-height;
+            text-transform: capitalize;
+
+            &:after {
+                content: ',';
+            }
+
+            &:hover {
+                color: $widget-link-hover-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	
+    .qodef-ps-image-holder {
+	    
+	    &.qodef-ps-gallery-images {
+		
+		    /***** Columns Layout - begin *****/
+		
+		    @include laptop-landscape {
+			
+			    $columns_number: ('four');
+			
+			    @for $i from 0 to length($columns_number) {
+				    &.qodef-ps-#{nth($columns_number,$i+1)}-columns {
+					    $item_size: 100% / 3;
+					
+					    .qodef-ps-image {
+						    width: $item_size;
+					    }
+					
+					    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+						
+						    .qodef-ps-image {
+							
+							    &:nth-child(3n+1) {
+								    clear: both;
+							    }
+						    }
+					    }
+				    }
+			    }
+		    }
+		
+		    @include ipad-landscape {
+			
+			    $columns_number: ('three', 'four');
+			
+			    @for $i from 0 to length($columns_number) {
+				    &.qodef-ps-#{nth($columns_number,$i+1)}-columns {
+					
+					    .qodef-ps-image {
+						    width: 50%;
+					    }
+					
+					    @media only screen and (min-width: $phone-landscape-plus-pixel) {
+						
+						    .qodef-ps-image {
+							
+							    &:nth-child(2n+1) {
+								    clear: both;
+							    }
+						    }
+					    }
+				    }
+			    }
+		    }
+		
+		    @include phone-landscape {
+			
+			    .qodef-ps-image {
+				    width: 100% !important; // !important is set to override all other stronger selectors
+			    }
+		    }
+		
+		    /***** Columns Layout - end *****/
+	    }
+    }
+}
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */

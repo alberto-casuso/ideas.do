@@ -1,0 +1,108 @@
+.qodef-mobile-header {
+
+    .qodef-mobile-nav {
+        display: none;
+        background-color: #fff;
+        border-bottom: 1px solid $default-border-color;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                position: relative;
+                padding: 0;
+                margin: 0;
+
+                a, h5 { //h5 is here because of no link option in navigation
+                    position: relative;
+                    display: block;
+                    padding: 9px 0;
+                    margin: 0;
+                    color: $default-text-color;
+                    border-bottom: 1px solid $default-border-color;
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+            //dropdowns
+            ul {
+                display: none;
+                margin-left: 15px;
+
+                li {
+
+                    &.current-menu-ancestor > a,
+                    &.current-menu-item > a {
+                        color: $first-main-color;
+                    }
+
+                    a, h5 {
+                        font-size: 11px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        .qodef-grid > ul {
+
+            > li {
+
+                > a,
+                > h5 {
+                    padding-left: 4px;
+                    font-size: 13px;
+                }
+
+                &.qodef-active-item > a {
+                    color: $first-main-color;
+                }
+
+                &.qodef-active-item > .mobile_arrow > .qodef-sub-arrow {
+                    @include qodefTransform(rotate(90deg));
+                }
+            }
+        }
+
+        .mobile_arrow {
+            $mobile-arrow-height: 45px;
+
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: $mobile-arrow-height;
+            padding-right: 12px;
+            line-height: $mobile-arrow-height;
+            font-size: 15px;
+            text-align: right;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .qodef-sub-arrow {
+                @include qodefTransition(transform 0.2s ease-in-out);
+            }
+
+            //@TODO remove this line of code when new headers are enabled
+            .fa-angle-down {
+                display: none; //temporarily
+            }
+        }
+
+        li.qodef-opened > .mobile_arrow > .qodef-sub-arrow {
+            @include qodefTransform(rotate(90deg));
+        }
+
+        & > ul > li:last-child > a,
+        & > .qodef-grid > ul > li:last-child > a {
+            border-bottom: none;
+        }
+    }
+}

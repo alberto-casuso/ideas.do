@@ -1,0 +1,32 @@
+.qodef-blog-holder {
+
+    &.qodef-blog-chequered {
+
+        article {
+            @include laptop-landscape-large {
+                .qodef-post-text {
+                    padding: 0 33px;
+                }
+            }
+            @include phone-portrait {
+                .qodef-post-text {
+                    padding: 0 13px;
+                }
+                .qodef-post-info-top {
+                    font-size: 10px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        &.qodef-blog-masonry-in-grid {
+            article {
+                @include ipad-landscape {
+                    .qodef-post-text {
+                        padding: 0 23px;
+                    }
+                }
+            }
+        }
+    }
+}

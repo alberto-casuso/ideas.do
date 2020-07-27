@@ -1,0 +1,237 @@
+/* ==========================================================================
+   Blog List - Chequered style - begin
+   ========================================================================== */
+
+.qodef-blog-holder {
+	
+    &.qodef-blog-chequered {
+
+        article {
+
+            .qodef-blog-masonry-gallery-link {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
+	        
+            .qodef-post-content {
+                overflow: hidden;
+                height: 100%;
+                z-index: 3;
+            }
+
+            .qodef-post-text {
+                position: absolute;
+                display: table;
+                table-layout: fixed;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                padding: 0 63px;
+                background-color: rgba(0,0,0, 0.95);
+                opacity: 0;
+                box-sizing: border-box;
+                @include qodefTransition(opacity .2s);
+                text-align: center;
+            }
+
+            .qodef-post-text-inner {
+                display: table-cell;
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+
+            &:hover .qodef-post-text {
+                opacity: 1;
+            }
+
+            .qodef-post-link-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            &.qodef-post-no-media {
+                .qodef-post-content{
+                    background-color: #f3f3f3;
+                }
+            }
+	        
+            .qodef-post-heading {
+	            height: 100%;
+	            margin-bottom: 0;
+
+                .qodef-post-image {
+                    height: 100%;
+                }
+            }
+	        
+            .qodef-post-title {
+                margin: 0;
+                color: #ffffff;
+            }
+
+            .qodef-post-info-top {
+                font-family: Montserrat, sans-serif;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                z-index: 2;
+                .qodef-post-info-date {
+                    color: #FFFFFF;
+                    &:after {
+                        content: "/";
+                    }
+                }
+                .qodef-post-info-category {
+                    color: #b4b4b4;
+                    a {
+                      text-decoration: underline;
+                    }
+                }
+            }
+
+            .qodef-post-text-main {
+                margin-bottom: 20px;
+                z-index: 2;
+            }
+	        
+            .qodef-post-info-bottom {
+                display: block;
+                width: auto;
+                height: auto;
+                z-index: 2;
+                .qodef-post-read-more-button a {
+                    background-color: #ffffff;
+                    border-color: #fff;
+                    color: #000000;
+                }
+            }
+
+            &.format-gallery {
+                .qodef-post-heading {
+                    position: relative;
+                }
+            }
+
+            &.format-link,
+            &.format-quote {
+                .qodef-post-text {
+                    background-color: #ffffff;
+                    opacity: 1;
+                }
+                .qodef-post-text-inner {
+                    z-index: 1;
+                }
+                .qodef-post-title {
+                    color: #000000;
+                }
+            }
+
+            &.format-link {
+                .qodef-post-text {
+                    .qodef-post-mark {
+                        position: absolute;
+                        top: -39px;
+                        right: -41px;
+                        font-size: 163px;
+                        color: #eeeeee;
+                    }
+                    .qodef-post-link-holder {
+                        position:relative;
+                        .qodef-post-title {
+                            font-size: 22px;
+                            font-weight: 600;
+                            line-height: 32px;
+                        }
+                    }
+                }
+
+                .qodef-link-title a {
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+
+            &.format-quote {
+                .qodef-post-text {
+                    .qodef-post-mark {
+                        position: absolute;
+                        top: -88px;
+                        right: -63px;
+                        font-size: 237px;
+                        color: #eeeeee;
+                    }
+                    .qodef-post-quote-holder {
+                        position:relative;
+                        .qodef-quote-title {
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 32px;
+                            letter-spacing: -0.5px;
+                        }
+                        .qodef-quote-author {
+                            font-family: Montserrat, sans-serif;
+                            font-size: 11px;
+                            font-weight:700;
+                            display: block;
+                            margin-top: 17px;
+                            color:#b4b4b4;
+                            text-transform: uppercase;
+                            .qodef-quote-line {
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                    .qodef-quote-title a {
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+            }
+
+            &.format-audio {
+                .qodef-blog-audio-holder{
+                    display: none;
+                }
+            }
+
+            &.format-video,
+            &.format-audio {
+                .qodef-vb-play-icon {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 56px;
+                    height: 56px;
+                    font-size: 56px;
+                    color: #fff;
+                    z-index: 2;
+                    @include qodefTransform(translate(-50%, -50%));
+                }
+            }
+        }
+
+        &.qodef-blog-masonry-in-grid {
+            article {
+                .qodef-post-text {
+                    padding: 0 43px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog List - Chequered style - end
+   ========================================================================== */

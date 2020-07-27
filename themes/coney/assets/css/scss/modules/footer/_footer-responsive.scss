@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+@include ipad-portrait {
+
+    footer {
+
+        .qodef-column-content {
+            
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@include laptop-landscape {
+
+    footer .qodef-footer-top-simple-holder {
+
+        .qodef-social-icon-widget-holder  {
+            
+            width: calc( 33.333% - 4px );
+
+        }
+    }
+}
+
+@include phone-landscape {
+
+    footer .qodef-footer-top-simple-holder {
+
+        .qodef-social-icon-widget-holder  {
+            
+            width: 100%;
+            
+        }
+    }
+}
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */

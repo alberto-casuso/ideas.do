@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Blog Slider shortcode style - begin
+   ========================================================================== */
+
+.qodef-blog-slider-holder {
+    visibility: hidden;
+    
+    .qodef-blog-slider {
+        margin: 0;
+    }
+
+    .qodef-blog-slider-item {
+        @include qodefRelativeHolderLayout();
+        list-style-type: none;
+        text-align: center;
+
+        .qodef-item-image {
+            @include qodefRelativeHolderLayout();
+        }
+
+        .qodef-item-text-wrapper {
+            @include qodefAbsoluteHolderLayout();
+            opacity: 0;
+            @include qodefTransition(opacity 0.3s ease-out, transform 0.3s ease-out);
+            @include qodefTransform(translateY(15px));
+        }
+
+        .qodef-item-text-holder {
+            @include qodefTableLayout();
+        }
+
+        .qodef-item-info-section{
+            margin-bottom: 5px;
+    
+            > div {
+                position: relative;
+                display: inline-block;
+                padding-right: 25px;
+                margin-left: 5px;
+        
+                &:after {
+                    content: "/";
+                    position: absolute;
+                    top: 0;
+                    right: 5px;
+                }
+        
+                &:first-child {
+                    margin-left: 0;
+                }
+        
+                &:last-child {
+            
+                    &:after {
+                        content: '';
+                    }
+                }
+        
+                span {
+                    color: #444;
+                }
+            }
+        }
+    
+        .qodef-item-title {
+            margin: 0;
+            text-transform: uppercase;
+            a {
+              display: block;
+            }
+        }
+
+        .qodef-section-button-holder {
+            @include qodefRelativeHolderLayout();
+            margin: 20px 0 0;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .active.center {
+	    
+        .qodef-blog-slider-item {
+	        
+            .qodef-item-text-wrapper {
+                opacity: 1;
+                @include qodefTransform(translateY(0px));
+            }
+        }
+    }
+
+    .center {
+
+      .qodef-blog-slider-item {
+
+        .qodef-item-text-wrapper {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.dark {
+      .owl-nav {
+
+        .owl-prev,
+        .owl-next {
+          &:hover {
+            .qodef-prev-icon,
+            .qodef-next-icon {
+              color: rgba(0,0,0,0.5);
+            }
+          }
+        }
+        .qodef-prev-icon,
+        .qodef-next-icon {
+          color: #000000;
+          @include qodefTransition(color .15s ease);
+
+        }
+      }
+
+      .owl-dots {
+        .owl-dot {
+          span {
+            background-color: rgba(#000000, .5);
+          }
+          &:hover,
+          &.active {
+            span {
+              background-color: #000000;
+            }
+          }
+        }
+      }
+
+    }
+	
+	.owl-nav {
+		
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			@include qodefTransform(translateY(-50%));
+			
+			&:hover {
+				
+				.qodef-prev-icon,
+				.qodef-next-icon {
+					color: rgba(255,255,255,0.8);
+				}
+			}
+		}
+		
+		.owl-prev {
+			left: 0;
+		}
+		
+		.owl-next {
+			right: 0;
+		}
+		
+		.qodef-prev-icon,
+		.qodef-next-icon {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: #ffffff;
+			@include qodefTransition(color .15s ease);
+			
+			.qodef-icon-arrow {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 80px;
+				line-height: 1em;
+				
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
+    .owl-dots {
+        text-align: center;
+        margin: 16px 0 0;
+        position: absolute;
+        bottom: 34px;
+        left: 50%;
+        @include qodefTransform(translateX(-50%));
+
+        .owl-dot {
+	        display: inline-block;
+	        vertical-align: middle;
+	
+	        span {
+		        display: inline-block;
+		        vertical-align: middle;
+		        width: 10px;
+		        height: 10px;
+		        margin: 0 9px;
+		        border-radius: 3em;
+		        background-color: rgba(#ffffff, .65);
+		        @include qodefTransition(all 0.2s ease);
+		        box-sizing: border-box;
+	        }
+	
+	        &:hover,
+	        &.active {
+		
+		        span {
+			        background-color: #ffffff;
+                    @include qodefTransform(scale(1.3, 1.3));
+		        }
+	        }
+        }
+    }
+}
+/* ==========================================================================
+   Blog Slider shortcode style - end
+   ========================================================================== */
+
+@import "boxed";
+@import "standard";
+@import "simple";

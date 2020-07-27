@@ -1,0 +1,116 @@
+.qodef-blog-list-holder {
+    &.qodef-bl-masonry {
+
+        transition: none !important;
+        overflow: visible !important;
+
+        .qodef-blog-list {
+            opacity: 0;
+            @include qodefTransition(opacity .2s ease-out);
+        }
+
+        .qodef-bl-item {
+            vertical-align: top;
+            z-index: 100;
+        }
+
+        .qodef-bl-item,
+        .qodef-bl-grid-sizer {
+            width: 100%;
+        }
+
+        .qodef-bl-grid-gutter {
+            width: 0;
+        }
+
+        $masonry_columns_number: ('two', 'three', 'four', 'five');
+
+        @for $i from 0 to length($masonry_columns_number) {
+            &.qodef-bl-#{nth($masonry_columns_number,$i+1)}-columns {
+                $column_width: 100%/($i+2);
+
+                .qodef-bl-item,
+                .qodef-bl-grid-sizer {
+                    width: $column_width;
+                }
+            }
+        }
+
+        .qodef-post-image {
+            margin-bottom: 16px;
+        }
+
+        .qodef-bli-info {
+            @include qodefRelativeHolderLayout();
+            margin: 0;
+            clear: both;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            color: #000000;
+            font-size: 11px;
+            text-transform: uppercase;
+
+            > div {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                padding: 0 13px 5px 0;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 4px;
+                    content: '/';
+                }
+
+                &:last-child {
+                    padding: 0 0 5px;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .qodef-post-info-category {
+            a {
+                color: $first-main-color;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 1px;
+                    display: inline-block;
+                    width: 100%;
+                    border-bottom: 1px solid $first-main-color;
+                }
+            }
+        }
+
+        .qodef-blog-like {
+            span {
+                padding-left: 2px;
+            }
+        }
+
+        .qodef-post-title {
+            margin: 0;
+        }
+
+        .qodef-bli-info-bottom {
+            display: table;
+            width: 100%;
+            margin-top: 18px;
+            > div {
+                display: table-cell;
+            }
+
+            .qodef-blog-share {
+                text-align: right;
+            }
+        }
+    }
+}

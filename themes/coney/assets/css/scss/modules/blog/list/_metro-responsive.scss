@@ -1,0 +1,99 @@
+.qodef-blog-holder {
+    &.qodef-blog-metro {
+
+        &.qodef-blog-masonry-in-grid {
+            article {
+                @include ipad-landscape {
+                    &.format-link {
+                        .qodef-post-info {
+                            .qodef-link-title {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    &.format-quote {
+                        .qodef-post-info {
+                            .qodef-quote-title {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        article {
+            &.format-standard {
+                @include laptop-landscape-large {
+                    .qodef-post-info {
+                        padding: 37px 46px 30px 34px;
+                    }
+                }
+            }
+            &.format-quote {
+                @include laptop-landscape-large {
+                    .qodef-post-info .qodef-post-quote-holder {
+                        padding: 35px 65px 40px 45px;
+                    }
+                    .qodef-post-info .qodef-quote-title {
+                        font-size: 22px;
+                        line-height: 34px;
+                    }
+                }
+                @include phone-landscape {
+                    .qodef-post-info .qodef-post-quote-holder {
+                        padding: 25px;
+                    }
+                }
+            }
+            &.format-link {
+                @include laptop-landscape-large {
+                    .qodef-post-info .qodef-post-link-holder {
+                        padding: 35px 65px 40px 45px;
+                    }
+                    .qodef-post-info .qodef-link-title {
+                        font-size: 22px;
+                        line-height: 34px;
+                    }
+                }
+                @include phone-landscape {
+                    .qodef-post-info .qodef-post-link-holder {
+                        padding: 25px;
+                    }
+                }
+            }
+
+            &.qodef-post-size-large-height {
+                @include phone-landscape {
+                    .qodef-post-image {
+                        width: 100%;
+                        a img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            &.qodef-post-size-large-width {
+                @include phone-landscape {
+                    .qodef-post-info-bottom {
+                        display: none;
+                    }
+                }
+            }
+            @include phone-portrait {
+                &.format-standard {
+                    .qodef-post-info {
+                        padding: 15px !important; /* Because of combinations fw/in grid */
+                        .qodef-post-top-section > div {
+                            font-size: 10px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

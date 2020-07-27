@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+
+.qodef-elements-holder {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+
+	&.qodef-two-columns {
+
+		.qodef-eh-item {
+			width: 50%;
+		}
+	}
+
+	&.qodef-three-columns {
+
+		.qodef-eh-item {
+			width: 33%;
+		}
+	}
+
+	&.qodef-four-columns {
+
+		.qodef-eh-item {
+			width: 25%;
+		}
+	}
+
+	&.qodef-five-columns {
+
+		.qodef-eh-item {
+			width: 20%;
+		}
+	}
+
+	&.qodef-six-columns {
+
+		.qodef-eh-item {
+			width: 16%;
+		}
+	}
+
+	.qodef-eh-item {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+
+		&.qodef-vertical-alignment-top {
+			vertical-align: top;
+		}
+
+		&.qodef-vertical-alignment-bottom {
+			vertical-align: bottom;
+		}
+
+		&.qodef-horizontal-alignment-center {
+			text-align: center;
+		}
+
+		&.qodef-horizontal-alignment-right {
+			text-align: right;
+		}
+
+		.qodef-elements-holder-item-inner {
+			width: 100%;
+		}
+	}
+
+	&.qodef-ehi-float {
+
+		&.qodef-three-columns {
+
+			.qodef-eh-item {
+				width: 33.33333333333333%;
+			}
+		}
+
+		&.qodef-six-columns {
+
+			.qodef-eh-item {
+				width: 16.66666666666667%;
+			}
+		}
+
+		.qodef-eh-item {
+			float:left;
+		}
+	}
+
+	.qodef-ehi-content {
+		padding: 0 20px;
+	}
+}
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Grid System responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+    .qodef-columns-wrapper {
+        &.qodef-content-columns-four {
+            > .qodef-columns-inner {
+                > .qodef-column-content {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    
+    .qodef-columns-wrapper {
+        
+        .qodef-column-content {
+            width: 100% !important;
+            float: none !important;
+        }
+        
+        $columns_space_label: ('large');
+        $columns_space: (15);
+        
+        @for $i from 0 to length($columns_space_label) {
+            &.qodef-columns-#{nth($columns_space_label,$i+1)}-space {
+                $item_space: nth($columns_space, $i+1);
+                
+                > .qodef-columns-inner {
+                    margin: 0 -#{$item_space}px;
+                    
+                    > .qodef-column-content {
+                        padding: 0 #{$item_space}px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Grid System responsive style - end
+   ========================================================================== */

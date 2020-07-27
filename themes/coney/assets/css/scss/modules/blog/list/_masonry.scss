@@ -1,0 +1,328 @@
+/* ==========================================================================
+   Blog List - Masonry style - begin
+   ========================================================================== */
+
+.qodef-blog-holder {
+	
+    &.qodef-blog-masonry {
+
+        article {
+            margin: 0 0 20px;
+            padding: 0 0 30px;
+
+            .qodef-post-image > a {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(255, 255, 255, 0.15);
+                    opacity: 0;
+                    @include qodefTransition(opacity 0.25s);
+                }
+
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.qodef-post-has-media {
+                .qodef-post-heading {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .qodef-post-title {
+                margin: 0;
+
+                a:hover {
+                    color: #545454;
+                }
+            }
+
+            .qodef-post-excerpt-holder {
+                @include qodefRelativeHolderLayout();
+                margin: 0 0 3px;
+            }
+
+            .qodef-more-link-container {
+                @include qodefRelativeHolderLayout();
+                margin: 20px 0 0;
+            }
+
+            .qodef-post-info-top {
+                margin-bottom: 5px;
+                font-family: Montserrat, sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 20px;
+
+                .qodef-post-info-category a {
+                    color:#003cd4;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .qodef-post-info-date a {
+                    &:hover {
+                        color: $default-heading-color;
+                    }
+                }
+	            
+                > div {
+	                position: relative;
+	                display: inline-block;
+                    padding-right: 11px;
+
+	                &:after {
+		                content: "/";
+		                position: absolute;
+		                top: 0;
+                        right: 1px;
+	                }
+	                
+	                &:first-child {
+		                margin-left: 0;
+	                }
+	                
+	                &:last-child {
+		                
+		                &:after {
+			                content: '';
+		                }
+	                }
+	
+	                span {
+		                color: #444;
+	                }
+                }
+            }
+
+            .qodef-post-info-bottom {
+
+                .qodef-post-info-bottom-left,
+                .qodef-post-info-bottom-right {
+	                position: relative;
+	                display: inline-block;
+	                width: 50%;
+	                float: left;
+                    line-height: 25px;
+                }
+
+                .qodef-post-read-more-button a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .qodef-post-info-bottom-right {
+	                
+                    > div {
+                        margin-left: 15px;
+	                    
+	                    &:first-child {
+		                    margin-left: 0;
+	                    }
+                    }
+                    .qodef-social-share-holder.qodef-list li {
+                        margin: 0 8px 3px 0;
+                        a {
+                            font-size: 17px;
+                        }
+
+                    }
+                }
+
+                .qodef-post-info-author {
+                    display: inline-block;
+	                
+                    a {
+                        text-transform: capitalize;
+                        color: #444;
+	                    
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .qodef-post-info-bottom-right {
+                    text-align: right;
+                    line-height: 40px;
+                }
+
+                .qodef-post-info-comments-holder,
+                .qodef-blog-like {
+                    display: inline-block;
+
+                    a {
+                        display: inline-block;
+
+                        span,
+                        i {
+                            vertical-align: middle;
+                            color: #444;
+                        }
+                    }
+                }
+
+                .qodef-blog-like {
+	                
+                    i:first-child,
+                    span:first-child {
+                        @include qodefTransition(color 0.15s ease-out);
+                        margin-right: 7px;
+                        color: #c4c3c3;
+                    }
+
+                    &:hover {
+	                    
+                        i:first-child,
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .qodef-post-info-comments-holder {
+	                
+                    span:first-child {
+                        @include qodefTransition(color 0.15s ease-out);
+                        margin-right: 7px;
+                        color: #c4c3c3;
+                    }
+	                
+                    &:hover {
+	                    
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+
+            &.format-audio {
+                &.qodef-post-no-media.has-post-thumbnail {
+                    .qodef-post-heading {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            &.format-link {
+	            
+                .qodef-post-text {
+                    padding: 40px 35px 60px;
+	                background-color: #f6f6f6;
+                    overflow: hidden;
+                }
+	            
+                .qodef-post-text-main {
+                    @include qodefTableLayout();
+                    text-align: left;
+                }
+	            
+                .qodef-post-mark {
+                    position: absolute;
+                    top: -52px;
+                    left: -47px;
+                    @include qodefTransform(rotate(90deg));
+
+                    .qodef-link-mark {
+                        padding-top: 5px;
+                        font-size: 78px;
+                        color: #eeeeee;
+                    }
+                }
+	            
+                .qodef-post-link-holder {
+                    @include qodefTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+	            
+                .qodef-post-title {
+                    margin-bottom: 0;
+                    font-size: 22px;
+                    font-weight: 700;
+
+                    a:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+	        
+            &.format-quote {
+	            
+                .qodef-post-text {
+                    padding: 40px 41px 60px 35px;
+	                background-color: #f6f6f6;
+                    overflow: hidden;
+                }
+	            
+                .qodef-post-text-main {
+                    @include qodefTableLayout();
+                    text-align: left;
+                }
+	            
+                .qodef-post-mark {
+                    position: absolute;
+                    top: -76px;
+                    left: -62px;
+
+                    .qodef-quote-mark {
+                        font-size: 120px;
+                        color: #eeeeee;
+                    }
+                }
+	            
+                .qodef-post-quote-holder {
+                    position: relative;
+                    .qodef-quote-author {
+                        font-family: Montserrat, sans-serif;
+                        font-size:11px;
+                        font-weight: 700;
+                        color: $default-heading-color;
+                        text-transform: uppercase;
+                        .qodef-quote-line {
+                            margin-right: 3px;
+                        }
+                    }
+                }
+	            
+                .qodef-post-title {
+                    margin-bottom: 16px;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: -0.5px;
+                    span {
+                        padding-right: 4px;
+                        font-size: 26px;
+                    }
+
+                    a:hover {
+                        color: $first-main-color;
+                    }
+                }
+	            
+                .qodef-post-author {
+	                display: inline-block;
+	                margin-bottom: 23px;
+	                font-size: 13px;
+	                line-height: 20px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Blog List - Masonry style - end
+   ========================================================================== */

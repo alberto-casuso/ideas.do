@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.qodef-banner-holder {
+    @include qodefRelativeHolderLayout();
+
+    .qodef-banner-image {
+        @include qodefRelativeHolderLayout();
+
+        img {
+            display: block;
+        }
+
+        &:after {
+            content: '';
+            @include qodefAbsoluteHolderLayout();
+            background-color: rgba(255, 255, 255, 0.15);
+            opacity: 0;
+            @include qodefTransition(opacity 0.25s ease-out);
+        }
+    }
+
+    .qodef-banner-table-holder {
+        text-align: center;
+    }
+
+    .qodef-banner-title {
+        margin: 30px 0 0 0;
+        @include qodefTransition(color 0.15s ease-out);
+    }
+
+    .qodef-banner-link {
+        @include qodefAbsoluteHolderLayout();
+        z-index: 1;
+    }
+
+    &:hover {
+
+        .qodef-banner-title {
+            color: $first-main-color;
+        }
+
+        .qodef-banner-image:after {
+            opacity: 1;
+        }
+
+    }
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

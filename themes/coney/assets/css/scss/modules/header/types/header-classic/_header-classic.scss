@@ -1,0 +1,51 @@
+.qodef-header-classic {
+
+	.qodef-page-header {
+
+		.qodef-menu-area {
+			height: 80px;
+		}
+
+		.qodef-logo-area {
+			height: 315px;
+		}
+	}
+
+    .qodef-menu-area {
+
+        .qodef-vertical-align-containers {
+
+            .qodef-position-center-inner {
+                height: 100%;
+            }
+        }
+
+		.qodef-grid {
+			height: 100%;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+			box-sizing: border-box;
+		}
+    }
+
+    .qodef-main-menu {
+        width: auto;
+        > ul > li {
+            > a {
+                padding: 0 17px;
+            }
+        }
+    }
+
+	.qodef-logo-area {
+		.qodef-logo-wrapper {
+			padding-top: 10px; /* half the height of text wrapper padding - breaks alignment */
+		}
+		.qodef-text-wrapper {
+			padding-top: 20px;
+			span.qodef-text-under-logo {
+				font-size: 20px;
+			}
+		}
+	}
+}

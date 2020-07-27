@@ -1,0 +1,499 @@
+/* ==========================================================================
+   WooCommerce Single Product Page styles - begin
+   ========================================================================== */
+
+.qodef-woo-single-page {
+	
+	&.qodef-woo-single-thumb-on-left-side {
+		
+		.qodef-single-product-content {
+			
+			.images {
+
+				@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+					figure {
+						width: 100%;
+						margin: 0;
+					}
+
+					.woocommerce-product-gallery__image {
+
+						&:first-child {
+							left: 120px;
+							width: calc(100% - 120px);
+						}
+					}
+
+					&.woocommerce-product-gallery--with-images {
+
+						.woocommerce-product-gallery__image {
+
+							&:not(:first-child) {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100px;
+								height: calc(25% + 5px);
+								padding: 0 0 20px;
+								box-sizing: border-box;
+
+								a {
+									height: 100%;
+
+									img {
+										height: 100%;
+									}
+								}
+							}
+
+							$thumbnail_numbers: (2, 3, 4, 5, 6, 7, 8, 9);
+							@for $i from 0 to length($thumbnail_numbers) {
+								$thumbnail_number_value: nth($thumbnail_numbers, $i+1);
+
+								&:nth-child(#{$thumbnail_number_value}#{n}) {
+									$first_param: (25 * $i)#{'%'};
+									$second_param: (5 * $i)#{px};
+									$topPos: calc(#{$first_param} + #{$second_param});
+
+									top: $topPos;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+    
+    .product {
+	    @include qodefRelativeHolderLayout();
+	    float: none;
+	    margin: 0 0 50px;
+    }
+        
+    .qodef-single-product-content {
+        @include qodefRelativeHolderLayout();
+        clear: both;
+        margin: 0 0 20px;
+	
+	    .images {
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: middle;
+		    width: 50%;
+		    margin: 0;
+		    padding: 0;
+		    float: left;
+		    box-sizing: border-box;
+
+			figure {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 -10px;
+
+				a {
+					@include qodefRelativeHolderLayout();
+
+					img {
+						width: 100%;
+						display: block;
+					}
+
+                    .qodef-fake-featured-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+				}
+			}
+
+			.woocommerce-product-gallery__trigger {
+				position: absolute;
+				top: 10px;
+				right: 39px;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				z-index: 10;
+			}
+
+			.woocommerce-product-gallery__image {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				margin: 0;
+				padding: 0 10px;
+				box-sizing: border-box;
+
+				&:first-child {
+					left: 10px;
+					width: calc(100% - 20px);
+					padding: 0;
+				}
+
+				.zoomImg {
+					cursor: crosshair;
+				}
+			}
+
+			&.woocommerce-product-gallery--with-images {
+
+				.woocommerce-product-gallery__image {
+
+					&:not(:first-child) {
+						float: left;
+						padding-top: 20px;
+					}
+				}
+			}
+
+			$thumb_3_columns_label: ('columns-2', 'columns-3', 'columns-4');
+			@for $i from 0 to length($thumb_3_columns_label) {
+				&.woocommerce-product-gallery--#{nth($thumb_3_columns_label, $i+1)} {
+					$column_width: 100%/($i+2);
+
+					.woocommerce-product-gallery__image {
+
+						&:not(:first-child) {
+							width: $column_width;
+						}
+					}
+				}
+			}
+	    }
+    }
+	
+    .qodef-single-product-summary {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0 0 0 50px;
+        float: left;
+        box-sizing: border-box;
+	
+	    .qodef-single-product-title {
+		    display: block;
+		    margin: 8px 0;
+	    }
+	
+	    .price {
+			font-size: 25px;
+			font-weight: 400;
+		    position: relative;
+		    display: block;
+		    line-height: 1;
+		    color: #b0b0b0;
+            margin: 13px 0;
+		
+		    * {
+			    font-size: inherit;
+			    line-height: inherit;
+		    }
+		
+		    del {
+			    margin: 0 8px 0 0;
+		    }
+		
+		    ins {
+			    text-decoration: none;
+		    }
+	    }
+	
+	    .woocommerce-product-rating {
+		    @include qodefRelativeHolderLayout();
+		    line-height: 1;
+		    margin: 18px 0 3px;
+	    }
+	
+	    div[itemprop="description"] {
+		    @include qodefRelativeHolderLayout();
+			margin: 11px 0 0;
+		
+		    p {
+			    margin: 0;
+		    }
+	    }
+	
+	    .product_meta {
+		    margin: 25px 0 0;
+		
+		    > span {
+			    display: block;
+			    margin: 1px 0;
+				font-family: Montserrat, sans-serif;
+				font-weight: 700;
+				font-size: 12px;
+				color: $default-heading-color;
+				text-transform: uppercase;
+			    a {
+				    color: $default-text-color;
+				
+				    &:hover {
+					    color: $first-main-color;
+				    }
+			    }
+		    }
+			.sku,
+			.posted_in a,
+			.tagged_as a{
+				font-family: Poppins, sans-serif;
+				font-size: 13px;
+				color: #868686;
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+	    }
+	
+	    .qodef-woo-social-share-holder {
+		    @include qodefRelativeHolderLayout();
+		    margin: 0;
+		
+		    > * {
+			    display: table-cell;
+			    vertical-align: top;
+		    }
+		
+		    > span {
+				font-family: Montserrat, sans-serif;
+				font-weight: 700;
+				font-size: 12px;
+				text-transform: uppercase;
+			    padding: 0 9px 0 0;
+				color: $default-heading-color;
+		    }
+			.qodef-social-share-holder.qodef-list li {
+				a {
+					font-size: 18px;
+				}
+			}
+	    }
+	
+	    p.stock.out-of-stock,
+	    p.stock.in-stock {
+		    color: $default-heading-color;
+		    font-weight: 700;
+		    margin: 18px 0 0;
+	    }
+	
+	    form.cart {
+		    @include qodefRelativeHolderLayout();
+		    margin: 27px 0 52px;
+	    }
+	
+	    .qodef-quantity-buttons {
+		    margin: 0 15px 0 0;
+	    }
+
+        .single_add_to_cart_button {
+            padding: 12px 27px;
+        }
+    }
+	
+	.woocommerce-tabs {
+		@include qodefRelativeHolderLayout();
+		margin: 48px 0 0;
+		
+		ul.tabs {
+			@include qodefRelativeHolderLayout();
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			border: 1px solid $default-border-color;
+			clear: both;
+            width: auto;
+			
+			> li {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				float: left;
+				
+				a {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+                    padding: 9px 22px;
+					border-right: 1px solid #dfdfdf;
+					font-family: Montserrat, sans-serif;
+					font-weight: 700;
+					font-size: 12px;
+					text-transform: uppercase;
+                    @include qodefTransition(color .05s ease, background-color .05s ease, border-color .05s ease);
+				}
+                &:last-child {
+                    a {
+                        border-right: 0;
+                    }
+                }
+				&.active,
+				&:hover {
+					a {
+						background-color: $default-heading-color;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+		
+		.entry-content {
+			@include qodefRelativeHolderLayout();
+			
+			> h2 {
+				display: none;
+			}
+			
+			> p {
+				margin: 25px 0 20px;
+			}
+		}
+		
+		table {
+			margin: 25px 0 20px;
+			
+			tr, th {
+				border: 0;
+			}
+			
+			td, th {
+				padding: 3px 0;
+				vertical-align: middle;
+				text-align: left;
+				
+				p {
+					margin: 0;
+				}
+			}
+			
+			th {
+				color: $default-heading-color;
+				width: 1%;
+				padding: 0 10px 0 0;
+			}
+			
+			td {
+				width: 99%;
+			}
+		}
+		
+		#reviews {
+			@include qodefRelativeHolderLayout();
+			margin: 18px 0 20px;
+			
+			h2 {
+				font-size: 18px;
+				line-height: 24px;
+				margin: 8px 0 24px;
+			}
+			
+			ol.commentlist {
+				list-style: none;
+				
+				.comment_container {
+					@include qodefRelativeHolderLayout();
+					
+					img {
+						float: left;
+						width: 60px;
+					}
+				}
+				
+				.comment-text {
+					padding: 0 0 0 80px;
+					
+					div[itemprop="description"] {
+						padding: 0;
+						margin: 0 0 15px;
+						border: 0;
+					}
+					
+					p {
+						margin: 5px 0 0;
+					}
+				}
+			}
+			
+			.comment-respond {
+				margin-top: 15px;
+				
+				.comment-reply-title {
+					margin: 0 0 10px;
+				}
+				
+				p {
+					margin: 0;
+				}
+				
+				.stars {
+					overflow: hidden;
+					
+					a {
+						position: relative;
+						display: inline-block;
+						color: transparent;
+						font-size: 0;
+						margin: 0;
+						
+						&:before {
+							position: relative;
+							display: inline-block;
+							vertical-align: middle;
+							font-family: "ElegantIcons";
+							content: "\e031";
+							font-size: 12px;
+							line-height: 1;
+							letter-spacing: 2px;
+							color: $default-text-color;
+							overflow: hidden;
+							z-index: -1;
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+						}
+						
+						&.active:after {
+							position: absolute;
+							right: 0;
+							bottom: 7px;
+							display: block;
+							font-family: "ElegantIcons";
+							font-size: 12px;
+							line-height: 1;
+							letter-spacing: 2px;
+							color: $default-text-color;
+							content: "\e033\e033\e033\e033\e033";
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.related.products,
+	.upsells.products {
+		margin: 18px 0 0;
+		border-top: 1px solid $default-border-color;
+		
+		> h2 {
+            font-family: Poppins, sans-serif;
+            color: $default-heading-color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.44em;
+		}
+		
+		.product {
+			
+			.qodef-pl-text-wrapper {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   WooCommerce Single Product Page styles - end
+   ========================================================================== */

@@ -1,0 +1,299 @@
+/* ==========================================================================
+   WooCommerce Dropdown Cart styles - begin
+   ========================================================================== */
+
+.qodef-shopping-cart-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    padding: 0 10px;
+
+    .touch & {
+        cursor: pointer;
+    }
+
+    &.qodef-cart-info-is-disabled {
+
+        .qodef-header-cart {
+
+            .qodef-cart-info {
+                display: none;
+            }
+        }
+    }
+
+    .qodef-shopping-cart-inner {
+        position: relative;
+        display: table;
+        height: 100%;
+    }
+
+    .qodef-header-cart {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        color: $default-text-color;
+
+        .qodef-cart-icon {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            line-height: 1em;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+
+        .qodef-cart-info {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 0 0 5px;
+            font-size: 14px;
+            line-height: 1;
+            clear: both;
+
+            .qodef-cart-info-number {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                padding: 0 8px 0 0;
+                margin: 0 5px 0 0;
+
+                &:after {
+                    position: absolute;
+                    right: -1px;
+                    content: '-';
+                }
+            }
+
+            .qodef-cart-info-total {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+            }
+        }
+
+        &:hover {
+            color: $default-heading-color;
+        }
+    }
+
+    &:hover {
+
+        .qodef-shopping-cart-dropdown {
+            display: block;
+        }
+    }
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-shopping-cart-holder .qodef-header-cart {
+    color: $header-dark-color;
+
+    &:hover {
+        color: $header-dark-hover-color;
+    }
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-shopping-cart-holder .qodef-header-cart {
+    color: $header-light-color;
+
+    &:hover {
+        color: $header-light-hover-color;
+    }
+}
+
+.qodef-shopping-cart-dropdown {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+    width: 308px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid $default-border-color;
+    text-align: left;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    ul {
+        margin: 25px;
+        padding: 0;
+
+        li {
+            @include qodefTableLayout;
+            padding: 20px 0;
+            border-bottom: 1px solid $default-border-color;
+            box-sizing: border-box;
+
+            &.qodef-empty-cart {
+                border: 0;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .qodef-item-image-holder {
+        position: relative;
+        display: table-cell;
+        height: 100%;
+        width: 84px;
+        vertical-align: top;
+
+        img {
+            display: block;
+        }
+    }
+
+    .qodef-item-info-holder {
+        @include qodefTableCellLayout();
+        vertical-align: top;
+        padding-left: 20px;
+
+        .qodef-product-title {
+            display: block;
+            margin: 0;
+            padding: 0 20px 0 0;
+            box-sizing: border-box;
+        }
+
+        .remove {
+            position: absolute;
+            top: 0;
+            right: 3px;
+            width: 18px;
+            height: 18px;
+            color: $default-heading-color;
+	        font-size: 26px;
+	        line-height: 24px;
+            text-align: center;
+
+            span {
+                display: block;
+                line-height: inherit;
+
+                &:before {
+                    display: block;
+                    line-height: inherit;
+                }
+            }
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+
+        .qodef-quantity {
+            display: block;
+            color: initial;
+            margin: 7px 0 10px;
+        }
+
+        .amount {
+            display: block;
+            color: $default-heading-color;
+            line-height: 1;
+        }
+    }
+
+    .qodef-cart-bottom {
+        padding: 21px 0 0;
+
+        .qodef-subtotal-holder {
+            position: relative;
+            display: table;
+            width: 100%;
+            margin: 0 0 16px;
+
+            > * {
+                display: table-cell;
+                vertical-align: top;
+                color: $default-heading-color;
+                line-height: 20px;
+            }
+
+            .qodef-total-amount {
+                text-align: right;
+	            font-size: 16px;
+            }
+        }
+
+        .qodef-cart-description {
+            @include qodefRelativeHolderLayout();
+            margin: 0 0 10px;
+
+            .qodef-cart-description-inner {
+                position: relative;
+                display: table;
+                width: 100%;
+                height: 100%;
+                padding: 17px 30px;
+                background-color: #f4f4f4;
+                text-align: center;
+                box-sizing: border-box;
+
+                span {
+                    position: relative;
+                    display: table-cell;
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                    color: $default-heading-color;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .qodef-view-cart {
+            @include qodefRelativeHolderLayout();
+            height: 44px;
+            line-height: 44px;
+            padding: 0 26px;
+            font-size: 10px;
+            font-weight: inherit;
+	        letter-spacing: 2px;
+            color: #fff;
+            background-color: $first-main-color;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            -webkit-appearance: none;
+            box-sizing: border-box;
+            @include qodefTransition(color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out);
+
+            span {
+                display: block;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: $default-heading-color;
+            }
+        }
+    }
+}
+
+.qodef-vertical-menu-area {
+
+    .qodef-shopping-cart-dropdown {
+        display: none !important;
+    }
+}
+/* ==========================================================================
+   WooCommerce Dropdown Cart styles - end
+   ========================================================================== */

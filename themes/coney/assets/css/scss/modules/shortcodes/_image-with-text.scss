@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.qodef-image-with-text-holder {
+    @include qodefRelativeHolderLayout();
+	
+	.qodef-iwt-image {
+		@include qodefRelativeHolderLayout();
+		
+		a, img {
+			display: block;
+		}
+	}
+	
+	.qodef-iwt-text-holder {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	.qodef-iwt-title {
+		margin: 35px 0 0;
+	}
+	
+	.qodef-iwt-text {
+		margin: 14px 0 0;
+	}
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

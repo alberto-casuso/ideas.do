@@ -1,0 +1,105 @@
+/* Single author box styles - begin
+	====================================================================== */
+
+.qodef-author-description {
+    @include qodefRelativeHolderLayout();
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dfdfdf;
+
+    .qodef-author-description-inner {
+        padding: 30px 0 30px;
+        min-height: 126px; // static height of author image -- qodef-author-description-image
+        clear: both;
+    }
+
+    .qodef-author-description-content {
+        display: table;
+        position: relative;
+        padding: 0 30px;
+    }
+
+    .qodef-author-description-image {
+        display: table-cell;
+        width: 126px;
+        vertical-align: middle;
+
+        img {
+            display: block;
+            border-radius: 5em;
+        }
+    }
+
+    .qodef-author-description-text-holder {
+        display: table-cell;
+        position: relative;
+        padding: 4px 0;
+        padding-left: 30px;
+        text-align: left;
+
+        .qodef-author-name {
+            margin: 0;
+
+            a {
+                color: $default-heading-color;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+
+        .qodef-author-email {
+            margin: 0;
+        }
+
+        .qodef-author-text {
+            @include qodefRelativeHolderLayout();
+
+            > p {
+                margin: 17px 0 14px;
+            }
+        }
+
+        .qodef-author-social-icons {
+            @include qodefRelativeHolderLayout();
+
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0;
+                margin: 0 15px 0 0;
+                font-size: 11px;
+                color: $default-heading-color;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+
+    @include ipad-portrait {
+        .qodef-author-description-content {
+            padding: 0;
+        }
+        .qodef-author-description-image {
+            display: block;
+            width: 100%;
+        }
+        .qodef-author-description-text-holder {
+            display: block;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+}
+
+/* Single author box styles - end
+	====================================================================== */

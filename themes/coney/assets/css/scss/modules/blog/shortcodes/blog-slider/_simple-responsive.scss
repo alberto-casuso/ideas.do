@@ -1,0 +1,29 @@
+.qodef-blog-slider-holder {
+    &.qodef-bls-simple {
+        .qodef-blog-slider-item {
+            .qodef-item-info-section-top {
+                @include phone-landscape {
+                    margin-bottom: 10px;
+                    .qodef-post-info-date a {
+                        font-size: 11px;
+                    }
+                }
+            }
+            .qodef-item-title a {
+                @include ipad-portrait {
+                    font-size: 30px !important;
+                    line-height: 42px !important;
+                }
+                @include phone-landscape {
+                    font-size: 15px !important;
+                    line-height: 27px !important;
+                }
+            }
+            .qodef-section-button-holder {
+                @include phone-landscape {
+                    display: none;
+                }
+            }
+        }
+    }
+}

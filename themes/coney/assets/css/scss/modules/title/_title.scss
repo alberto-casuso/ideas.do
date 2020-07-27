@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+
+.qodef-title {
+    @include qodefRelativeHolderLayout();
+    height: 300px;
+    text-align: left;
+    z-index: 101;
+    background-color: #f6f6f6;
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    &.qodef-has-parallax-background {
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        z-index: 101;
+    }
+
+    &.qodef-content-center-alignment {
+        text-align: center;
+    }
+
+    &.qodef-content-right-alignment {
+        text-align: right;
+    }
+
+    &.qodef-has-responsive-background {
+        height: auto !important;
+
+        .qodef-title-holder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+
+            .qodef-container {
+                display: block;
+                height: 100%;
+            }
+
+            .qodef-container-inner {
+                display: table;
+                height: 100%;
+            }
+
+            .qodef-title-subtitle-holder {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+    }
+
+    .qodef-title-image {
+
+        img {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &.qodef-title-image-not-responsive {
+
+        .qodef-title-image {
+            display: none;
+        }
+    }
+
+    .qodef-title-holder {
+        position: relative;
+        display: table;
+        height: 100%;
+        width: 100%;
+
+        .qodef-container {
+            display: table-row;
+            vertical-align: middle;
+            background-color: transparent;
+        }
+
+        .qodef-container-inner {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 !important;
+        }
+
+        .qodef-title-subtitle-holder {
+            position: relative;
+            display: block;
+            padding: 0;
+            z-index: 25;
+        }
+
+        .qodef-title-subtitle-holder-inner {
+            position: relative; //because of the breadcrumbs (absolute position) on standard type title
+        }
+
+        /* #Standard title - start
+        ========================================================================== */
+    
+        .qodef-page-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+    
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .qodef-subtitle {
+            display: block;
+            margin-top: 4px;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        /* #Standard title - end
+        ========================================================================== */
+
+        /* #Breadcrumb title - start
+        ========================================================================== */
+
+        .qodef-breadcrumbs-holder {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .qodef-breadcrumbs {
+
+            a, 
+            span {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                color: $default-text-color;
+            }
+
+            a:hover {
+                color: $default-heading-color;
+            }
+        }
+
+        /* #Breadcrumb title - end
+        ========================================================================== */
+    }
+
+    &.qodef-standard-type {
+
+        .qodef-breadcrumbs-holder {
+            position: absolute;
+            top: 0;
+            height: 100%;
+
+            .qodef-breadcrumbs {
+                display: table;
+                height: 100%;
+                width: 100%;
+            }
+
+            .qodef-breadcrumbs-inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+        }
+
+        &.qodef-content-left-alignment {
+
+            .qodef-breadcrumbs-holder {
+                right: 0;
+            }
+        }
+
+        &.qodef-content-right-alignment {
+
+            .qodef-breadcrumbs-holder {
+                left: 0;
+            }
+        }
+
+        &.qodef-content-center-alignment {
+
+            .qodef-breadcrumbs-holder {
+                position: relative;
+                top: auto;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */

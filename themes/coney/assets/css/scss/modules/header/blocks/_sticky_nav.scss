@@ -1,0 +1,52 @@
+/* ==========================================================================
+#Sticky Nav header styles - start
+========================================================================== */
+.qodef-sticky-header {
+
+    body[class*='qodef-sticky'] & .qodef-search-opener .qodef-search-opener-wrapper {
+        top: 0;
+        @include qodefTransform(none);
+    }
+
+    &.qodef-menu-left {
+
+        .qodef-main-menu {
+            width: auto;
+            padding: 0 0 0 20px;
+        }
+
+        .qodef-vertical-align-containers {
+
+            .qodef-position-left-inner {
+                height: 100%;
+            }
+        }
+    }
+
+    &.qodef-menu-center {
+
+        .qodef-vertical-align-containers {
+
+            .qodef-position-center-inner {
+                height: 100%;
+            }
+        }
+    }
+
+    &.qodef-menu-right {
+
+        .qodef-main-menu {
+            width: auto;
+        }
+
+        .qodef-vertical-align-containers {
+
+            .qodef-position-right-inner {
+                height: 100%;
+            }
+        }
+    }
+}
+/* ==========================================================================
+#Sticky Nav header styles - end
+========================================================================== */

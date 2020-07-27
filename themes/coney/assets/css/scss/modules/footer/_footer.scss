@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+/* ==========================================================================
+   #Content bottom styles - start
+   ========================================================================== */
+.qodef-content-bottom {
+
+    .qodef-content-bottom-inner{
+        box-sizing: border-box;
+        
+        &.qodef-grid{
+            padding: 0;
+        }
+        
+        &.qodef-full-width{
+            padding: 0;
+        }
+    }
+}
+
+footer {
+    @include qodefRelativeHolderLayout();
+    z-index: 100;
+    box-sizing: border-box;
+
+    .qodef-footer-top-holder {
+        @include qodefRelativeHolderLayout();
+        background-color: #000;
+        box-sizing: border-box;
+
+        .qodef-footer-top-alignment-center{
+            text-align: center;
+        }
+	    
+        .qodef-footer-top-alignment-left{
+            text-align: left;
+        }
+	    
+        .qodef-footer-top-alignment-right{
+            text-align: right;
+        }
+
+        .qodef-footer-top-inner{
+            box-sizing: border-box;
+	        
+            &.qodef-grid{
+                padding: 72px 0 61px;
+            }
+	        
+            &.qodef-full-width{
+                padding: 72px 50px;
+            }
+        }
+
+        .qodef-content-columns-three {
+	        
+            &.qodef-25-25-50 {
+	            
+                .qodef-column-content1,
+                .qodef-column-content2 {
+                    width: 25%;
+                }
+	            
+                .qodef-column-content3 {
+                    width: 50%;
+                }
+            }
+	        
+            &.qodef-50-25-25 {
+	            
+                .qodef-column-content1 {
+                    width: 50%;
+                }
+	            
+                .qodef-column-content2,
+                .qodef-column-content3 {
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+    .qodef-footer-top-simple-holder {
+        @include qodefRelativeHolderLayout();
+        background-color: #0d0d0e;
+        box-sizing: border-box;
+        text-align: center;
+
+        .qodef-footer-top-simple-inner{
+            box-sizing: border-box;
+            
+            &.qodef-grid{
+                padding: 45px 0;
+            }
+            
+            &.qodef-full-width{
+                padding: 45px 50px;
+            }
+        }
+
+        .qodef-social-icon-widget-holder  {
+            color: #fff;
+            width: calc( 16.666% - 4px );
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .qodef-footer-bottom-holder {
+        @include qodefRelativeHolderLayout();
+        background-color: #0d0d0e;
+        box-sizing: border-box;
+        text-align: center;
+
+        .qodef-footer-bottom-inner {
+            box-sizing: border-box;
+	        
+            &.qodef-grid {
+                padding: 33px 0;
+            }
+	        
+            &.qodef-full-width {
+                padding: 33px 50px;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */

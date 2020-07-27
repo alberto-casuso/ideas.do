@@ -1,0 +1,212 @@
+/* ==========================================================================
+# Fullscreen search - start
+========================================================================== */
+
+
+/* Fullscreen search general style - start
+========================================================================== */
+
+.qodef-fullscreen-search-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 105;
+    opacity: 0;
+
+
+    .qodef-fullscreen-search-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .qodef-fullscreen-search-cell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .qodef-form-holder-inner {
+        position: relative;
+        width: 57%;
+        margin: auto;
+
+        .qodef-line {
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            @include qodefTransition(all .25s .15s);
+
+            .qodef-fullscreen-search-opened & {
+                width: 100%;
+                @include qodefTransition(width 0.35s ease .3s);
+            }
+        }
+    }
+
+    .qodef-field-holder {
+        display: block;
+        position: relative;
+        border: 1px solid #9d9d9d;
+    }
+
+    .qodef-search-field {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border: 0;
+        background: transparent;
+        outline: none;
+        font-family: inherit;
+        font-size: 46px;
+        font-weight: 600;
+        padding: 15px 90px 14px 35px;
+        color: #ffffff;
+        box-sizing: border-box;
+        @include qodefPlaceholder {
+            color: #ffffff;
+        }
+    }
+
+    .qodef-search-submit {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        width: auto;
+        font-size: 32px;
+        line-height: 104px;
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @include qodefTransition(color 0.15s ease);
+    }
+
+    .qodef-search-submit:hover {
+        color: #bababa;
+    }
+
+    .qodef-search-close-holder {
+        float: right;
+        margin-right: 45px;
+    }
+
+    .qodef-fullscreen-search-close-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+
+        a {
+            position: absolute;
+            top: 30px;
+            right: 33px;
+            color: #ffffff;
+            font-size: 24px;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+
+            &:hover {
+                color: #bababa;
+            }
+        }
+    }
+}
+
+//placeholders
+.qodef-fullscreen-search-opened {
+
+    @include qodefPlaceholder {
+        color: $default-heading-color;
+    }
+}
+
+/* Fullscreen search general style - end
+========================================================================== */
+
+/* Fullscreen search fade style - start
+========================================================================== */
+
+.qodef-search-fade .qodef-fullscreen-search-holder {
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+    z-index: 112;
+    box-sizing: border-box;
+
+    .qodef-fullscreen-search-table {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+}
+
+.qodef-search-fade-out.qodef-search-fade .qodef-fullscreen-search-holder {
+    @include qodefAnimation(search_fade_out .2s ease-out both);
+}
+
+.qodef-search-fade-in.qodef-search-fade .qodef-fullscreen-search-holder.qodef-animate {
+    @include qodefAnimation(search_fade_in .3s ease both);
+}
+
+.qodef-search-fade .qodef-fullscreen-search-holder.qodef-animate .qodef-fullscreen-search-close {
+    opacity: 1;
+    visibility: visible;
+}
+
+@-webkit-keyframes search_fade_out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes search_fade_out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes search_fade_in {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes search_fade_in {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Fullscreen search fade style - end
+========================================================================== */
+
+/* ==========================================================================
+# Fullscreen search - end
+========================================================================== */

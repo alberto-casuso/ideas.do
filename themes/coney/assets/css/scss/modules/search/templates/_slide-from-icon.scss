@@ -1,0 +1,69 @@
+/* ==========================================================================
+# Slide From Icon search general style - start
+========================================================================== */
+
+.qodef-slide-from-icon-holder {
+    width: 0;
+    box-sizing: border-box;
+    outline: 0;
+    @include qodefTransition(width 0.2s ease-out);
+
+    .qodef-form-holder {
+        @include qodefRelativeHolderLayout;
+        box-sizing: border-box;
+
+        .qodef-search-field {
+            width: 100%;
+            line-height: 23px;
+            color: #b7b7b7;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #b7b7b7;
+            border-radius: 0;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            -webkit-appearance: none;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            @include qodefTransition(color 0.2s ease-out, border-color 0.2s ease-out);
+            @include qodefPlaceholder {
+                color: #b7b7b7;
+            }
+
+            &:focus {
+                color: #8a8a8a;
+                border-color: #c5c5c5;
+                @include qodefPlaceholder {
+                    color: #8a8a8a;
+                }
+            }
+
+            .qodef-light-header & {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                @include qodefPlaceholder {
+                    color: #fff;
+                }
+                &:focus {
+                    color: #fff;
+                    border-color: #fff;
+                    @include qodefPlaceholder {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .qodef-search-opened & {
+        width: 122px;
+    }
+}
+
+/* ==========================================================================
+# Slide From Icon search general style - end
+========================================================================== */

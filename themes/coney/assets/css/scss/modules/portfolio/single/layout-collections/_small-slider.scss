@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	
+	&.qodef-ps-small-slider-layout {
+		
+		.qodef-ps-image-holder {
+			
+			.qodef-ps-image-inner {
+				visibility: hidden;
+			}
+			
+			.qodef-ps-image {
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+		
+		.qodef-ps-content-item {
+			margin: 0 0 30px;
+		}
+		
+		@include ipad-portrait {
+			
+			.qodef-ps-info-holder {
+				margin: 35px 0 0 !important; // can be set inline in option
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */

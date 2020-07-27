@@ -1,0 +1,62 @@
+/* ==========================================================================
+# Search opener - begin
+========================================================================== */
+
+.qodef-search-opener {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    @include ipad-portrait {
+        margin: 0 5px;
+    }
+
+    .qodef-search-opener-wrapper {
+
+        > * {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .qodef-icon-font-awesome,
+        .qodef-icon-font-elegant,
+        .qodef-icon-ion-icon {
+            line-height: inherit;
+        }
+    }
+
+    .qodef-search-icon {
+        font-size: 13px;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        background-color: $first-main-color;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-search-opener,
+.qodef-light-header .qodef-top-bar .qodef-search-opener {
+    color: $header-light-color !important; //Color can be set inline from widget opener
+
+    &:hover {
+        color: $header-light-hover-color !important;
+    }
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-search-opener,
+.qodef-dark-header .qodef-top-bar .qodef-search-opener {
+    color: $header-dark-color !important; //Color can be set inline from widget opener
+
+    &:hover {
+        color: $header-dark-hover-color !important;
+    }
+}
+
+/* ==========================================================================
+# Search opener - end
+========================================================================== */

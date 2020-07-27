@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Blog List shortcode Common style - begin
+   ========================================================================== */
+
+.qodef-blog-list-holder {
+    @include qodefRelativeHolderLayout();
+    clear: both;
+
+    .qodef-blog-list {
+        @include qodefRelativeHolderLayout();
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+	
+	.qodef-bl-item {
+		@include qodefRelativeHolderLayout();
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	.qodef-bli-inner {
+		@include qodefRelativeHolderLayout();
+	}
+	
+	.qodef-bli-content {
+		@include qodefRelativeHolderLayout();
+		box-sizing: border-box;
+		.qodef-bli-info {
+			.qodef-post-info-date a{
+				color: #545454;
+
+				&:hover {
+					color: #bababa;
+				}
+			}
+		}
+		.qodef-post-title a {
+			&:hover {
+				color: #545454;
+			}
+		}
+	}
+	
+	.qodef-post-image {
+		@include qodefRelativeHolderLayout();
+		
+		a, img {
+			display: block;
+		}
+	}
+	
+	.qodef-bli-excerpt {
+		@include qodefRelativeHolderLayout();
+		margin: 0;
+
+        .qodef-post-excerpt {
+            &:after {
+                content: '...';
+            }
+        }
+
+		.qodef-post-read-more-button a{
+			&:hover {
+				color: #bababa !important;
+			}
+		}
+	}
+
+    .qodef-bli-section-title-holder {
+        position: relative;
+        margin-bottom: 33px;
+        overflow: hidden;
+
+        .qodef-bli-section-title {
+            margin: 0;
+            display: inline-block;
+            width: auto;
+            padding-right: 25px;
+        }
+
+        .qodef-bli-section-title-line {
+            display: inline-block;
+            width: 100%;
+            border-bottom: 1px solid #e3e3e3;
+            position: absolute;
+            top: 50%;
+        }
+    }
+	
+	/***** Columns Space style - begin *****/
+	
+	$columns_space_label: ('no', 'tiny', 'small', 'normal');
+	$columns_space: (0, 5, 10, 16);
+	
+	@for $i from 0 to length($columns_space_label) {
+		&.qodef-bl-#{nth($columns_space_label,$i+1)}-space {
+			$column_width: nth($columns_space, $i+1);
+			$column_width_margin: $column_width * 2;
+			
+			.qodef-bl-wrapper {
+				@if($column_width == 0) {
+					margin: 0;
+				} @else {
+					margin: 0 -#{$column_width}px;
+				}
+			}
+			
+			.qodef-bl-item {
+				padding: 0 #{$column_width}px;
+				margin: 0 0 #{$column_width_margin}px;
+			}
+
+            .qodef-bli-section-title-holder {
+                padding-left: #{$column_width}px;
+            }
+		}
+	}
+	
+	/***** Columns Space style - end *****/
+}
+/* ==========================================================================
+   Blog List shortcode Common style - end
+   ========================================================================== */
+@import "masonry";
+@import "image-left";
+@import "simple";
+@import "standard";
+@import "navigation/loading-element";

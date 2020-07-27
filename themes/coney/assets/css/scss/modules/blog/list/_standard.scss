@@ -1,0 +1,314 @@
+/* ==========================================================================
+   Blog List - Standard style - begin
+   ========================================================================== */
+
+.qodef-blog-holder {
+
+    &.qodef-blog-standard {
+
+        article {
+            margin: 0 0 30px;
+            padding: 0;
+
+            &.qodef-post-has-media {
+                .qodef-post-heading {
+                    margin-bottom: 22px;
+                }
+            }
+
+            .qodef-post-title {
+                margin: 0;
+
+                a:hover {
+                    color: #545454;
+                }
+            }
+
+            .qodef-post-excerpt-holder {
+                @include qodefRelativeHolderLayout();
+            }
+
+            .qodef-more-link-container {
+                @include qodefRelativeHolderLayout();
+                margin: 20px 0 0;
+            }
+
+            .qodef-post-info-top {
+                font-family: Montserrat, sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                font-size: 12px;
+                .qodef-post-info-category a {
+                    color: #003cd4;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                > div {
+                    position: relative;
+                    display: inline-block;
+                    padding-right: 13px;
+
+                    &:after {
+                        content: "/";
+                        position: absolute;
+                        top: 0;
+                        right: 1px;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+
+                        &:after {
+                            content: '';
+                        }
+                    }
+
+                    span {
+                        color: #444;
+                    }
+                }
+
+                .qodef-post-info-date a {
+                    &:hover {
+                        color: $default-heading-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .qodef-post-info-bottom {
+                margin-top: 20px;
+                padding-bottom: 27px;
+                border-bottom: 1px solid #eeeeee;
+
+                .qodef-post-info-bottom-left,
+                .qodef-post-info-bottom-right {
+                    position: relative;
+                    display: inline-block;
+                    width: 50%;
+                    float: left;
+                    line-height: 40px;
+                }
+
+                .qodef-post-info-bottom-right {
+
+                    > div {
+                        margin-left: 17px;
+                        display: inline-block;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                    .qodef-social-share-holder.qodef-list li {
+                        a {
+                            font-size: 17px;
+                        }
+                    }
+                    .qodef-share-text {
+                        font-size: 12px;
+                        font-family: Montserrat, sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+                }
+
+                .qodef-post-info-author {
+                    display: inline-block;
+
+                    a {
+                        color: #444;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .qodef-post-info-bottom-right {
+                    text-align: right;
+                }
+
+                .qodef-post-info-comments-holder,
+                .qodef-blog-like {
+                    display: inline-block;
+
+                    a {
+                        display: inline-block;
+
+                        span,
+                        i {
+                            vertical-align: middle;
+                            color: #444;
+                        }
+                    }
+                }
+
+                .qodef-blog-like {
+
+                    i:first-child,
+                    span:first-child {
+                        margin-right: 7px;
+                        color: #c4c3c3;
+                        @include qodefTransition(color 0.15s ease-out);
+                    }
+
+                    &:hover {
+
+                        i:first-child,
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .qodef-post-info-comments-holder {
+
+                    span:first-child {
+                        margin-right: 7px;
+                        color: #c4c3c3;
+                        @include qodefTransition(color 0.15s ease-out);
+                    }
+
+                    &:hover {
+
+                        span:first-child {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+
+            &.format-image {
+                padding-bottom: 27px;
+                border-bottom: 1px solid #eeeeee;
+            }
+
+            &.format-audio {
+                &.qodef-post-no-media.has-post-thumbnail {
+                    .qodef-post-heading {
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+
+            &.format-link {
+                padding-bottom: 27px;
+                border-bottom: 1px solid #eeeeee;
+
+                .qodef-post-text {
+                    padding: 50px 53px;
+                    background-color: #f6f6f6;
+                    overflow: hidden;
+                }
+
+                .qodef-post-text-main {
+                    @include qodefTableLayout();
+                    text-align: left;
+                }
+
+                .qodef-post-mark {
+                    position: absolute;
+                    top: -69px;
+                    left: -71px;
+                    @include qodefTransform(rotate(90deg));
+
+                    .qodef-link-mark {
+                        padding-top: 5px;
+                        font-size: 111px;
+                        color: #eeeeee;
+                    }
+                }
+
+                .qodef-post-link-holder {
+                    @include qodefTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+
+                .qodef-post-title {
+                    margin-bottom: 0;
+
+                    a:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+            &.format-quote {
+
+                padding-bottom: 27px;
+                border-bottom: 1px solid #eeeeee;
+
+                .qodef-post-text {
+                    padding: 45px 53px;
+                    background-color: #f6f6f6;
+                    overflow: hidden;
+                }
+
+                .qodef-post-text-main {
+                    @include qodefTableLayout();
+                    text-align: left;
+                }
+
+                .qodef-post-mark {
+                    position: absolute;
+                    top: -113px;
+                    left: -107px;
+                    .qodef-quote-mark {
+                        padding-top: 5px;
+                        font-size: 221px;
+                        color: #eeeeee;
+                    }
+                }
+                .qodef-post-quote-holder {
+                    position: relative;
+                    .qodef-quote-author {
+                        font-family: Montserrat, sans-serif;
+                        font-size: 12px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #000000;
+                        .qodef-quote-line {
+                            margin-right: 3px;
+                        }
+                    }
+                }
+
+                .qodef-post-link-holder {
+                    @include qodefTableCellLayout();
+                    vertical-align: top;
+                    text-align: left;
+                }
+
+                .qodef-post-title {
+                    margin-bottom: 13px;
+
+                    a:hover {
+                        color: $first-main-color;
+                    }
+                }
+
+                .qodef-post-author {
+                    display: inline-block;
+                    margin-bottom: 23px;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Blog List - Standard style - end
+   ========================================================================== */

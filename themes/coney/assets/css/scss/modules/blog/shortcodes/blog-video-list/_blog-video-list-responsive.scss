@@ -1,0 +1,14 @@
+@include phone-portrait {
+  .qodef-blog-video-list-holder{
+
+    $columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($columns_number) {
+      &.qodef-bvl-#{nth($columns_number,$i+1)}-columns {
+        .qodef-bvl-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

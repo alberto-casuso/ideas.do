@@ -1,0 +1,152 @@
+.qodef-blog-slider-holder {
+    &.qodef-bls-standard:not(.qodef-bls-in-grid) {
+        .qodef-blog-slider-item {
+            .qodef-item-text-holder {
+                @include laptop-landscape-large {
+                    width: 50%
+                }
+                @include ipad-landscape {
+                    width: 57%
+                }
+                @include ipad-portrait {
+                    width: 44%;
+                }
+                @include phone-landscape {
+                    width: 100%;
+                }
+            }
+            .qodef-item-text-holder-inner {
+                @include laptop-landscape-large {
+                    padding-left: 25%;
+                    .qodef-item-info-section-top {
+                        margin-bottom: 15px;
+                    }
+                }
+                @include ipad-landscape {
+                    padding-left: 15%;
+                    padding-right: 15%;
+                }
+                @include ipad-portrait {
+                    padding: 0 10%;
+                    .qodef-item-info-section-bottom {
+                        margin: 14px 0 0;
+                    }
+                    .qodef-section-button-holder {
+                        display: none;
+                    }
+                }
+                @include phone-landscape {
+                    .qodef-item-info-section-top {
+                        margin-bottom: 0;
+                        .qodef-post-info-category a {
+                            font-size: 8px;
+                        }
+                    }
+                    .qodef-item-info-section-bottom {
+                        margin: 0 0 0;
+                        .qodef-post-info-author,
+                        .qodef-post-info-date {
+                            font-size: 8px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+                @include phone-portrait {
+                    padding: 0 5%;
+                }
+            }
+            .qodef-item-title a {
+                @include laptop-landscape-large {
+                    font-size: 44px !important;
+                    line-height: 48px !important;
+                }
+                @include ipad-landscape {
+                    font-size: 38px !important;
+                    line-height: 44px !important;
+                }
+                @include ipad-portrait {
+                    font-size: 26px !important;
+                    line-height: 32px !important;
+                }
+                @include phone-landscape {
+                    font-size: 16px !important;
+                    line-height: 22px !important;
+                }
+            }
+        }
+
+        .owl-dots {
+            @include phone-landscape {
+                bottom: -3px;
+                .owl-dot span {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 6px;
+                }
+            }
+        }
+    }
+
+    &.qodef-bls-standard.qodef-bls-in-grid {
+        .qodef-blog-slider-item {
+            .qodef-main-text-holder {
+                @include laptop-landscape-large {
+                    width: 52%
+                }
+                @include laptop-landscape {
+                    width: 55%;
+                }
+                @include ipad-landscape {
+                    width: 100%
+                }
+                @include phone-landscape {
+                    .qodef-item-info-section-top {
+                        margin-bottom: 0;
+                        .qodef-post-info-category a {
+                            font-size: 8px;
+                        }
+                    }
+                    .qodef-item-info-section-bottom {
+                        margin: 0 0 0;
+                        .qodef-post-info-author,
+                        .qodef-post-info-date {
+                            font-size: 8px;
+                            line-height: 12px;
+                        }
+                    }
+                    .qodef-section-button-holder {
+                        display: none;
+                    }
+                }
+            }
+            .qodef-item-title a {
+                @include laptop-landscape-large {
+                    font-size: 46px !important;
+                    line-height: 58px !important;
+                }
+                @include ipad-landscape {
+                    font-size: 38px !important;
+                    line-height: 50px !important;
+                }
+                @include ipad-portrait {
+                    font-size: 30px !important;
+                    line-height: 42px !important;
+                }
+                @include phone-landscape {
+                    font-size: 16px !important;
+                    line-height: 22px !important;
+                }
+            }
+        }
+        .owl-dots {
+            @include phone-landscape {
+                bottom: -3px;
+                .owl-dot span {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 6px;
+                }
+            }
+        }
+    }
+}

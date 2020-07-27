@@ -1,0 +1,1 @@
+<?php do_action('coney_qodef_get_footer_template');

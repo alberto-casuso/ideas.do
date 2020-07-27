@@ -1,0 +1,34 @@
+/* ==========================================================================
+# Fullscreen search responsive - start
+========================================================================== */
+
+.qodef-fullscreen-search-holder {
+    @include ipad-portrait {
+        .qodef-form-holder-inner {
+            width: 75%;
+        }
+        .qodef-search-field {
+            font-size: 25px;
+        }
+        .qodef-search-submit {
+            font-size: 25px;
+            line-height: 71px;
+        }
+    }
+    @include phone-portrait {
+        .qodef-form-holder-inner {
+            width: 80%;
+        }
+        .qodef-search-field {
+            font-size: 15px;
+        }
+        .qodef-search-submit {
+            font-size: 15px;
+            line-height: 55px;
+        }
+    }
+}
+
+/* ==========================================================================
+# Fullscreen search responsive - end
+========================================================================== */

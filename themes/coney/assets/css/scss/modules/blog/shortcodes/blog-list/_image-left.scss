@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Blog List shortcode Standard - begin
+   ========================================================================== */
+
+.qodef-blog-list-holder {
+    &.qodef-bl-image-left {
+        &:not(.qodef-bl-one-column) {
+
+            .qodef-bl-item {
+                float: left;
+            }
+        }
+
+        $columns_number: ('two', 'three', 'four', 'five');
+
+        @for $i from 0 to length($columns_number) {
+            &.qodef-bl-#{nth($columns_number,$i+1)}-columns {
+
+                .qodef-bl-item {
+                    width: 100% / ($i+2);
+                }
+
+                @if ($i > 1) { // set different break point for four and five columns
+                    @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                        .qodef-bl-item {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else {
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        .qodef-bl-item {
+
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .qodef-bli-content-holder {
+            @include qodefTableLayout();
+        }
+
+        .qodef-post-image {
+            margin-bottom: 16px;
+            @include qodefTableCellLayout();
+            width: 35%;
+            padding-right: 25px;
+            vertical-align: top;
+        }
+
+        .qodef-bli-content {
+            margin-top: -7px;
+        }
+
+        .qodef-bli-info {
+            @include qodefTableCellLayout();
+            margin: 0;
+            clear: both;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            color: #000000;
+            font-size: 11px;
+            text-transform: uppercase;
+
+            > div {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                padding: 0 13px 5px 0;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 4px;
+                    content: '/';
+                }
+
+                &:last-child {
+                    padding: 0 0 5px;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .qodef-post-info-category {
+            a {
+                color: $first-main-color;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 1px;
+                    display: inline-block;
+                    width: 100%;
+                    border-bottom: 1px solid $first-main-color;
+                }
+            }
+        }
+
+        .qodef-blog-like {
+            span {
+                padding-left: 2px;
+            }
+        }
+
+        .qodef-post-title {
+            margin: 0;
+        }
+
+        .qodef-bli-info-bottom {
+            display: table;
+            width: 100%;
+            margin-top: 18px;
+            > div {
+                display: table-cell;
+            }
+
+            .qodef-blog-share {
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Blog List shortcode Standard - end
+   ========================================================================== */

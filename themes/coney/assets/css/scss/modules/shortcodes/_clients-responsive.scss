@@ -1,0 +1,53 @@
+/* ==========================================================================
+# Clients responsive style - begin
+========================================================================== */
+@media only screen and (min-width: $ipad-landscape) and (max-width: $laptop-landscape) {
+	.qodef-clients .qodef-client-holder .qodef-client-holder-inner{
+		padding: 0 10px;
+	}
+}
+
+@include ipad-landscape {
+	.qodef-clients{
+		&.qodef-clients-six-columns {
+			.qodef-client-holder {
+				width: 33.33333333333333%;
+				
+				&:nth-child(3n + 1){
+					clear: both;
+				}
+			}
+		}
+
+		&.qodef-clients-four-columns,
+        &.qodef-clients-five-columns{
+			.qodef-client-holder {
+				width: 50%;
+
+				&:nth-child(2n + 1){
+					clear: both;
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+	.qodef-clients {
+		&.qodef-clients-six-columns,
+		&.qodef-clients-five-columns,
+		&.qodef-clients-four-columns,
+		&.qodef-clients-three-columns,
+		&.qodef-clients-two-columns {
+			.qodef-client-holder {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
+# Clients responsive style - end
+========================================================================== */

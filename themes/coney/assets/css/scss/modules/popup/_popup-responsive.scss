@@ -1,0 +1,46 @@
+/* ==========================================================================
+# Pop-up style responsive - begin
+========================================================================== */
+
+.qodef-popup-holder {
+    .qodef-popup-inner {
+        @include laptop-landscape-medium {
+            width: 63%;
+        }
+        @include ipad-landscape {
+            width: 75%;
+        }
+        @include ipad-portrait {
+            width: 90%;
+        }
+        @include phone-landscape {
+            padding: 25px 0 23px;
+        }
+    }
+    .qodef-popup-content-container {
+        @include phone-portrait {
+            width: 95%;
+        }
+    }
+    .qodef-popup-title-holder .qodef-popup-title {
+        @include phone-landscape {
+            font-size: 25px;
+        }
+    }
+    .wpcf7 {
+        @include phone-portrait {
+            width: 100%;
+            .qodef-subscription-form .wpcf7-form-control.wpcf7-text {
+                width: 100%;
+                margin: 0 0 10px;
+            }
+            .qodef-subscription-form .wpcf7-form-control.wpcf7-submit {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Pop-up style responsive - end
+========================================================================== */

@@ -1,0 +1,140 @@
+/* Related posts styles - begin
+	====================================================================== */
+
+.qodef-related-posts-holder.qodef-related-posts-list {
+    @include qodefRelativeHolderLayout();
+    padding: 0;
+    box-sizing: border-box;
+
+    .qodef-related-posts-holder-inner {
+        padding: 24px 0 9px;
+    }
+
+    .qodef-related-posts-title {
+        margin: 0 0 27px;
+
+        > * {
+            margin: 0;
+            font-size: 12px;
+            color: #000;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+
+    .qodef-related-posts-inner {
+        margin: 0 -10px;
+    }
+
+    .qodef-related-post {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 25%;
+        margin: 0 0 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    
+        .touch & {
+            cursor: pointer;
+        }
+    
+        &:hover {
+        
+            .qodef-related-post-image a:after {
+                opacity: 1;
+            }
+        }
+    
+        .qodef-related-post-image {
+            @include qodefRelativeHolderLayout();
+            overflow: hidden;
+        
+            a {
+                position: relative;
+                display: block;
+            
+                &:after {
+                    @include qodefAbsoluteHolderLayout();
+                    content: '';
+                    opacity: 0;
+                    background-color: rgba($default-heading-color, 0.4);
+                    @include qodefTransition(opacity 0.3s ease);
+                }
+            }
+        
+            img {
+                display: block;
+            }
+        }
+    
+        .qodef-post-title {
+            margin: 0;
+        }
+    
+        .qodef-post-info {
+            @include qodefRelativeHolderLayout();
+            margin: 23px 0 0;
+
+            > div {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                float: left;
+                padding: 0 13px 0 0;
+                color: inherit;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 4px;
+                    content: '/';
+                }
+
+                &:last-child {
+                    padding: 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                a {
+                    font-family: Montserrat, sans-serif;
+                    color: #000;
+                    font-size: 11px;
+                    line-height: 1em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Related posts responsive style */
+
+    @include ipad-portrait {
+        .qodef-related-post {
+            width: 50% !important;
+        }
+    }
+    @include phone-portrait {
+        .qodef-related-post {
+            width: 100% !important;
+        }
+    }
+}
+
+.qodef-columns-wrapper:not(.qodef-content-columns-100) > .qodef-columns-inner > .qodef-column-content1 .qodef-related-posts-holder.qodef-related-posts-list,
+.qodef-columns-wrapper:not(.qodef-content-columns-100) > .qodef-columns-inner > .qodef-column-content2 .qodef-related-posts-holder.qodef-related-posts-list {
+    
+    .qodef-related-post {
+        width: 33.3333%;
+    }
+}
+
+/* Related posts styles - end
+	====================================================================== */

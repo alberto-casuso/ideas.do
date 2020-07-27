@@ -1,0 +1,381 @@
+/* ==========================================================================
+   Blog Common style - begin
+   ========================================================================== */
+
+.qodef-blog-holder {
+    @include qodefRelativeHolderLayout();
+    clear: both;
+
+    article {
+        @include qodefRelativeHolderLayout();
+        box-sizing: border-box;
+
+        &.sticky {
+
+            .qodef-post-title a {
+                color: $first-main-color;
+            }
+        }
+
+        .qodef-post-content {
+            @include qodefRelativeHolderLayout();
+        }
+
+        .qodef-post-image {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+
+            img {
+                display: block;
+            }
+        }
+
+        .qodef-post-text {
+            @include qodefRelativeHolderLayout();
+            box-sizing: border-box;
+        }
+
+        .qodef-post-excerpt {
+
+            &:after {
+                content: '...';
+            }
+        }
+
+        .qodef-post-info {
+            @include qodefRelativeHolderLayout();
+
+            > * {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+
+        .qodef-blog-share {
+            .qodef-share-text {
+                font-family: Montserrat, sans-serif;
+                font-weight: 700;
+                font-size: 12px;
+                color: #000000;
+                text-transform: uppercase;
+                margin-right: 6px;
+            }
+        }
+
+        //Gallery post style
+        &.format-gallery {
+    
+            .qodef-blog-gallery {
+                visibility: hidden;
+            }
+
+            .qodef-post-image {
+                width: 100%;
+            }
+
+            .owl-carousel .owl-item {
+                z-index: 2;
+
+                &.active {
+                    z-index: 3;
+                }
+            }
+        }
+
+        //Audio post style
+        &.format-audio {
+
+            .qodef-blog-audio-holder {
+
+                .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+                    background: none;
+                }
+
+                .mejs-container {
+                    background-color: #f1f1f1;
+                }
+
+                .mejs-container,
+                .mejs-container .mejs-controls {
+                    height: 65px !important;
+                }
+
+                .mejs-container .mejs-controls {
+                    padding: 0 10px 0 4px;
+                    box-sizing: border-box;
+                }
+
+                .mejs-container .mejs-controls > .mejs-playpause-button {
+                    width: 65px;
+                    box-sizing: border-box;
+                }
+
+                .mejs-container .mejs-controls > .mejs-volume-button {
+                    width: 47px;
+                }
+
+                .mejs-container .mejs-controls > .mejs-playpause-button,
+                .mejs-container .mejs-controls > .mejs-volume-button {
+                    height: 65px;
+
+                    button {
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+                        background: none;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 0;
+                        border: 0;
+                        outline: none;
+                    }
+
+                    &.mejs-play button {
+                        &:after {
+                            content: "\45";
+                            font-family: ElegantIcons;
+                            display: inline-block;
+                            font-size: 30px;
+                            line-height: 36px;
+                            width: 36px;
+                            height: 36px;
+                            color: #fff;
+                            background-color: $default-heading-color;
+                            border-radius: 50%;
+                            @include ipad-portrait {
+                                font-size: 12px;
+                                line-height: 18px;
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+
+                    &.mejs-pause button {
+                        &:after {
+                            content: "\60";
+                            font-family: ElegantIcons;
+                            display: inline-block;
+                            font-size: 30px;
+                            line-height: 36px;
+                            width: 36px;
+                            height: 36px;
+                            color: #fff;
+                            background-color: $default-heading-color;
+                            border-radius: 50%;
+                            @include ipad-portrait {
+                                font-size: 12px;
+                                line-height: 18px;
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+
+                    &.mejs-stop button {
+                        width: 39px;
+                        background-image: url('img/audio/stop.png');
+                    }
+
+                    &.mejs-mute button {
+                        &:after {
+                            padding-left: 10px;
+                            content: "\e069";
+                            font-family: ElegantIcons;
+                            display: inline-block;
+                            font-size: 20px;
+                            line-height: 36px;
+                            width: 36px;
+                            height: 36px;
+                            color: #000;
+                            @include ipad-portrait {
+                                font-size: 12px;
+                                line-height: 18px;
+                                width: 18px;
+                                height: 18px;
+                            }
+
+                        }
+                    }
+
+                    &.mejs-unmute button {
+                        &:after {
+                            padding-left: 10px;
+                            content: "\e067";
+                            font-family: ElegantIcons;
+                            display: inline-block;
+                            font-size: 20px;
+                            line-height: 36px;
+                            width: 36px;
+                            height: 36px;
+                            color: #000;
+                            @include ipad-portrait {
+                                font-size: 12px;
+                                line-height: 18px;
+                                width: 18px;
+                                height: 18px;
+                            }
+
+                        }
+                    }
+                }
+
+                .mejs-container .mejs-controls > .mejs-time {
+                    height: 100%;
+                    padding: 0;
+                    font-family: inherit;
+                    font-size: 13px;
+                    color: #494747;
+                    line-height: 65px;
+                    .mejs-currenttime {
+                        font-family: Montserrat, sans-serif;
+                    }
+                }
+
+                .mejs-container .mejs-controls > .mejs-time-rail {
+                    height: 100%;
+                    padding: 0;
+                    font-family: inherit;
+
+                    .mejs-time-total {
+                        height: 13px;
+                        margin: 26px 14px;
+                        background: none;
+                        background-color: #fff;
+
+                        .mejs-time-current {
+                            height: 13px;
+                            background-color: #003cd4;
+                        }
+
+                        .mejs-time-float {
+                            top: -14px;
+                            border: 0;
+                            color: #fff;
+
+                            .mejs-time-float-corner {
+                                border-top-color: $default-heading-color;
+                            }
+                        }
+
+                        .mejs-time-loaded,
+                        .mejs-time-float {
+                            background: none;
+                        }
+                    }
+                }
+
+                .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider {
+                    height: 65px;
+
+                    .mejs-horizontal-volume-total,
+                    .mejs-horizontal-volume-current {
+                        height: 13px;
+                        top: 26px;
+                        background: none;
+                    }
+
+                    .mejs-horizontal-volume-total {
+                        background-color: #fff;
+                    }
+
+                    .mejs-horizontal-volume-current {
+                        background-color: #003cd4;
+                    }
+                }
+            }
+        }
+    }
+    
+    // Pagination styles
+    .qodef-blog-load-more-button-holder,
+    .qodef-load-more-ajax-pagination {
+        @include qodefRelativeHolderLayout();
+        margin: 30px 0 60px;
+        text-align: center;
+    }
+
+    .qodef-blog-pagination {
+        margin: 10px 0 55px;
+    }
+
+    .qodef-blog-pag-load-more {
+        margin: 0 0 45px;
+    }
+
+    // Animation styles
+    &.qodef-blog-list-animate {
+        article {
+            visibility: hidden;
+        }
+
+        .no-touch & {
+            article {
+                visibility: visible;
+                opacity: 0;
+                @include qodefTransform(translateY(80px));
+                
+                &.qodef-appear{
+                    opacity: 1;
+                    @include qodefTransform(translateY(0));
+                    @include qodefTransition(all 1s cubic-bezier(.23, 1, .32, 1));
+
+                    &.qodef-appeared{
+                        @include qodefTransition(none);
+                    }
+                }
+            }
+
+            .qodef-blog-pag-load-more {
+                opacity: 0;
+
+                &.qodef-appeared {
+                    opacity: 1;
+                    @include qodefTransition(opacity 1s cubic-bezier(.23, 1, .32, 1));
+                }
+            }
+        }
+
+        .touch & article,
+        .touch & .qodef-blog-pag-load-more { 
+            visibility: visible;
+            opacity: 1;
+            @include qodefTransform(translateY(0));
+        }
+    }
+}
+
+/* ==========================================================================
+   Blog Common style - end
+   ========================================================================== */
+
+/* Blog List styles
+   ========================================================================== */
+@import 'list/blog-list';
+
+/* Blog Single styles
+   ========================================================================== */
+@import 'single/blog-single';
+
+/* Blog Parts styles
+   ========================================================================== */
+@import 'parts/author';
+@import 'parts/blog-widget-area';
+@import 'parts/pagination';
+@import 'parts/posts-navigation';
+@import 'parts/related-posts';
+@import 'parts/related-posts-carousel';
+
+/* Blog Shortcodes styles
+   ========================================================================== */
+@import 'shortcodes/blog-list/blog-list';
+@import 'shortcodes/blog-slider/blog-slider';
+@import 'shortcodes/blog-category/blog-category';
+@import 'shortcodes/blog-video-list/blog-video-list';

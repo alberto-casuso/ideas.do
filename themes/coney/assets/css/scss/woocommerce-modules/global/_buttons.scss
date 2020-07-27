@@ -1,0 +1,38 @@
+/* ==========================================================================
+   WooCommerce Buttons styles - begin
+   ========================================================================== */
+
+.woocommerce-page .qodef-content,
+div.woocommerce {
+    a.button,
+    a.added_to_cart,
+    input[type="submit"],
+    button[type="submit"],
+    .wc-forward:not(.added_to_cart):not(.checkout-button) {
+        @include qodefButtonDefaultStyle();
+        @include qodefButtonDefaultColor();
+
+        cursor: pointer;
+        font-size: 13px;
+        padding: 12px 35px;
+        z-index: 3;
+
+        &:hover {
+            @include qodefButtonDefaultHoverColor();
+        }
+    }
+
+    a.button {
+        &:after {
+
+        }
+    }
+
+    a.button.added {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   WooCommerce Buttons styles - end
+   ========================================================================== */

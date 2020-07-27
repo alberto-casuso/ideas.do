@@ -1,0 +1,342 @@
+@import "blocks/logo";
+@import "blocks/main_menu";
+@import "top-bar/top-bar";
+@import "types/header-standard/header-standard";
+@import "types/header-classic/header-classic";
+@import "types/header-divided/header-divided";
+@import "types/header-full-screen/header-full-screen";
+@import "types/header-vertical/header-vertical";
+@import "blocks/sticky_nav";
+@import "types/mobile-header/mobile-header";
+
+$logo-area-height: 85px;
+$menu-area-height: 85px;
+$sticky-header-height: 70px;
+
+.qodef-page-header {
+    @include qodefRelativeHolderLayout();
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    z-index: 110;
+    box-sizing: border-box;
+
+    /* ==========================================================================
+    #General header layout - start
+    ========================================================================== */
+    a img {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+    /* ==========================================================================
+    #General header layout - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Logo area styles - start
+    ========================================================================== */
+    .qodef-logo-area {
+        height: $logo-area-height;
+        overflow: hidden;
+        position: relative;
+
+        .qodef-logo-wrapper a {
+            max-height: $logo-area-height;
+        }
+    }
+    /* ==========================================================================
+    #Logo area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Menu area styles - start
+    ========================================================================== */
+    .qodef-menu-area {
+        position: relative;
+        height: $menu-area-height;
+        padding: 0 22px;
+	    border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        box-sizing: border-box;
+
+        .qodef-boxed & {
+            padding: 0 25px;
+        }
+
+        .qodef-vertical-align-containers {
+            padding: 0;
+        }
+
+        .qodef-logo-wrapper a {
+            max-height: $menu-area-height;
+        }
+
+        .widget {
+            display: inline-block;
+            vertical-align: middle;
+	        margin: 0;
+        }
+    }
+    /* ==========================================================================
+    #Menu area styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Sticky header styles - start
+    ========================================================================== */
+    .qodef-sticky-header {
+        height: $sticky-header-height;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        @include qodefTransform(translateY(-100%));
+        -webkit-transition: -webkit-transform 0.6s ease;
+        -moz-transition: -moz-transform 0.6s ease;
+        transition: transform .6s ease;
+        -webkit-backface-visibility: hidden;
+
+        .qodef-grid {
+            height: 100% !important; //override settings for other instances of this div
+        }
+
+        &.header-appear {
+            transform: translateY(0%);
+        }
+
+        .qodef-sticky-holder {
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            border-bottom: 1px solid #eeeeee;
+            box-sizing: border-box;
+
+            .qodef-boxed & {
+                border-bottom: 1px solid transparent;
+            }
+
+            .qodef-vertical-align-containers {
+                padding: 0 22px;
+
+                .qodef-boxed & {
+                    padding: 0 25px;
+                }
+            }
+
+            .qodef-grid .qodef-vertical-align-containers {
+                padding: 0;
+            }
+        }
+
+        .admin-bar &.header-appear {
+            top: 32px;
+        }
+
+        .qodef-sticky-holder .qodef-logo-wrapper a {
+            max-height: $sticky-header-height;
+        }
+
+        .qodef-position-center-inner {
+            height: 100%;
+        }
+
+        .qodef-sticky-right {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+    }
+    /* ==========================================================================
+    #Sticky header styles - end
+    ========================================================================== */
+
+    /* ==========================================================================
+    #Fixed header styles - start
+    ========================================================================== */
+    .qodef-fixed-wrapper.fixed {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        -webkit-backface-visibility: hidden;
+
+        .admin-bar & {
+            margin-top: 32px;
+        }
+    }
+
+    /* ==========================================================================
+    #Fixed header - end
+    ========================================================================== */
+}
+
+/* ==========================================================================
+#Light header - begin
+========================================================================== */
+
+.qodef-light-header {
+
+    .qodef-page-header > div:not(.fixed):not(.qodef-sticky-header) {
+
+        .qodef-logo-wrapper {
+
+            .qodef-light-logo {
+                opacity: 1;
+            }
+
+            .qodef-normal-logo,
+            .qodef-dark-logo {
+                opacity: 0;
+            }
+        }
+
+        .qodef-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+
+        &.qodef-menu-area {
+            color: $header-light-color !important; //Beacause of inline color styles
+
+            .widget {
+                color: $header-light-color !important; //Beacause of inline color styles
+
+                p,
+                a,
+                span,
+                i,
+                .widgettitle {
+                    color: $header-light-color !important; //Beacause of inline color styles
+                }
+
+                a:hover {
+                    color: $header-light-hover-color !important; //Beacause of inline color styles
+                }
+            }
+        }
+    }
+
+	.qodef-vertical-menu-area {
+
+		.qodef-logo-wrapper {
+
+			.qodef-light-logo {
+				opacity: 1;
+			}
+
+			.qodef-normal-logo,
+			.qodef-dark-logo {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+#Light header - end
+========================================================================== */
+
+/* ==========================================================================
+#Dark header - begin
+========================================================================== */
+
+.qodef-dark-header {
+
+    .qodef-page-header {
+
+        > div:not(.fixed):not(.qodef-sticky-header) {
+
+            .qodef-logo-wrapper {
+
+                .qodef-dark-logo {
+                    opacity: 1;
+                }
+
+                .qodef-normal-logo,
+                .qodef-light-logo {
+                    opacity: 0;
+                }
+            }
+
+            .qodef-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+
+            &.qodef-menu-area {
+                color: $header-dark-color !important; //Because of inline color styles
+
+                .widget {
+                    color: $header-dark-color !important; //Beacause of inline color styles
+
+                    p,
+                    a,
+                    span,
+                    i,
+                    .widgettitle {
+                        color: $header-dark-color !important; //Beacause of inline color styles
+                    }
+
+                    a:hover {
+                        color: $header-dark-hover-color !important; //Beacause of inline color styles
+                    }
+                }
+            }
+        }
+    }
+
+	.qodef-vertical-menu-area {
+
+		.qodef-logo-wrapper {
+
+			.qodef-dark-logo {
+				opacity: 1;
+			}
+
+			.qodef-normal-logo,
+			.qodef-light-logo {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+#Dark header - end
+========================================================================== */

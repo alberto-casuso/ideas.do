@@ -1,0 +1,66 @@
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_design_styles function */
+.qodef-boxed .qodef-wrapper { background-color: #f2f2f2;background-image: url(http://localhost/pmi/wordpress/wp-content/uploads/2016/12/box-background.png);background-position: 0px 0px;background-repeat: repeat;background-attachment: fixed;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_content_styles function */
+.qodef-content .qodef-content-inner > .qodef-full-width > .qodef-full-width-inner { padding-top: 0px;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_h1_styles function */
+h1 { font-family: Raleway;font-weight: 700;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_h2_styles function */
+h2 { font-family: Raleway;font-weight: 700;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_h3_styles function */
+h3 { font-family: Raleway;font-weight: 700;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_h4_styles function */
+h4 { font-family: Raleway;font-weight: 700;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_h5_styles function */
+h5 { font-family: Raleway;font-weight: 700;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_h6_styles function */
+h6 { font-family: Raleway;font-weight: 700;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/assets/custom-styles/general-custom-styles.php coney_qodef_text_styles function */
+p { color: #333333;font-family: Montserrat;font-size: 16px;font-weight: 400;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_label_styles_1 function */
+.cf7_custom_style_1 p { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_button_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_label_styles_2 function */
+.cf7_custom_style_2 p { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_button_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-submit { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_3 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-quiz { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_label_styles_3 function */
+.cf7_custom_style_3 p { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/contactform7/custom-styles/contact-form.php coney_qodef_contact_form7_button_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit { font-family: ;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/footer/custom-styles/custom-styles.php coney_qodef_footer_top_general_styles function */
+footer .qodef-footer-top-holder { background-color: #f6f6f6;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/footer/custom-styles/custom-styles.php coney_qodef_footer_top_simple_general_styles function */
+footer .qodef-footer-top-simple-holder { background-color: #f6f6f6;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/footer/custom-styles/custom-styles.php coney_qodef_footer_bottom_general_styles function */
+footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner { border-top: 1px solid #414141;}
+
+/* generated in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/coney/framework/modules/title/custom-styles/title.php coney_qodef_title_area_typography_style function */
+.qodef-title { height: px !important;}
+

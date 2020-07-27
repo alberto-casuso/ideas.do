@@ -1,0 +1,21 @@
+.qodef-header-vertical {
+
+    .qodef-logo-wrapper {
+        @include qodefRelativeHolderLayout();
+        z-index: 100;
+
+        a {
+            display: block;
+            position: relative;
+            height: 100%;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-height: 100%;
+
+            @include qodefTransition(opacity 0.3s ease);
+        }
+    }
+}

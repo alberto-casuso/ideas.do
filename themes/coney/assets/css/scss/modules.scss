@@ -1,0 +1,225 @@
+//global partials
+@import 'variables';
+@import 'mixins';
+/*------------------------------------------------------------------
+ * This is main css file for theme. It is broken into following sections:
+ * 1.  Global styles and reset
+ * 2.  Header Styles
+ * 3.  Footer styles
+ * 4.  Title area styles
+ * 5.  Side area styles
+ * 6.  Fullscreen Menu functionality styles
+ * 7.  Search functionality styles
+ * 8.  Portfolio styles
+ * 9.  Blog styles
+ * 10. Shortcodes styles
+ * 11. Widgets styles
+ * 12. Plugins styles
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+ * Color codes
+
+ * Accent color: #{$first-main-color}
+ * Background: #{$default-background-color}
+ * Content: #{$default-text-color}
+ * Header h1: #{$default-heading-color}
+ * Header h2: #{$default-heading-color}
+ * Header h3: #{$default-heading-color}
+ * Header h4: #{$default-heading-color}
+ * Header h5: #{$default-heading-color}
+ * Header h6: #{$default-text-color}
+ * Header Background: #ffffff
+ * Footer Top Background: #292929
+ * Footer Bottom Background: #fff
+
+ * a (standard): #{$first-main-color}
+ * a (hover): #{$first-main-color}
+ */
+/* ==========================================================================
+   1. Global styles and reset
+   ========================================================================== */
+@import 'global';
+@import 'grid-system';
+@import 'animations';
+@import 'spinners';
+@import 'common';
+
+/* ==========================================================================
+   2. Header styles
+   ========================================================================== */
+@import 'modules/header/header';
+
+/* ==========================================================================
+   3. Footer styles
+   ========================================================================== */
+@import 'modules/footer/footer';
+
+/* ==========================================================================
+   4. Title area styles
+   ========================================================================== */
+@import 'modules/title/title';
+
+/* ==========================================================================
+   5. Side area styles
+   ========================================================================== */
+@import 'modules/sidearea/sidearea';
+
+/* ==========================================================================
+   6. Fullscreen Menu area styles
+   ========================================================================== */
+@import 'modules/fullscreenmenu/fullscreenmenu';
+
+/* ==========================================================================
+   7. Search functionality styles
+   ========================================================================== */
+@import 'modules/search/search';
+
+/* ==========================================================================
+   8. Portfolio styles
+   ========================================================================== */
+@import 'modules/portfolio/portfolio';
+
+/* ==========================================================================
+   9. Blog styles
+   ========================================================================== */
+@import 'modules/blog/blog';
+
+/* ==========================================================================
+   10. Shortcodes styles
+   ========================================================================== */
+
+/* Accordions styles
+   ========================================================================== */
+@import 'modules/shortcodes/accordions';
+
+/* Banner styles
+   ========================================================================== */
+@import 'modules/shortcodes/banner';
+
+/* Button styles
+   ========================================================================== */
+@import 'modules/shortcodes/button';
+
+/* Blog Post Calendar styles
+   ========================================================================== */
+@import 'modules/shortcodes/blog-post-calendar';
+
+/* Call To Action styles
+   ========================================================================== */
+@import 'modules/shortcodes/call-to-action';
+
+/* Clients Carousel styles
+   ========================================================================== */
+@import 'modules/shortcodes/clients-carousel';
+
+/* Clients  styles
+   ========================================================================== */
+@import 'modules/shortcodes/clients';
+
+
+/* Cover boxes styles
+   ========================================================================== */
+@import 'modules/shortcodes/cover-boxes';
+
+/* Dropcaps styles
+   ========================================================================== */
+@import 'modules/shortcodes/dropcaps';
+
+/* Elements Holder styles
+   ========================================================================== */
+@import 'modules/shortcodes/elements-holder';
+
+/* Google Map styles
+   ========================================================================== */
+@import 'modules/shortcodes/google-map';
+
+/* Icon styles
+   ========================================================================== */
+@import 'modules/shortcodes/icon';
+
+/* Icon List Item styles
+   ========================================================================== */
+@import 'modules/shortcodes/icon-list-item';
+
+/* Icon With Text styles
+   ========================================================================== */
+@import 'modules/shortcodes/icon-with-text';
+
+/* Image Gallery styles
+   ========================================================================== */
+@import 'modules/shortcodes/image-gallery';
+
+/* Image With Text styles
+   ========================================================================== */
+@import 'modules/shortcodes/image-with-text';
+
+/* Info Box styles
+   ========================================================================== */
+@import 'modules/shortcodes/info-box';
+
+/* Parallax styles
+   ========================================================================== */
+@import 'modules/shortcodes/parallax';
+
+/* Pricing Tables styles
+   ========================================================================== */
+@import 'modules/shortcodes/pricing-tables';
+
+/* Progress Bar styles
+   ========================================================================== */
+@import 'modules/shortcodes/progress-bar';
+
+/* Section Title styles
+   ========================================================================== */
+@import 'modules/shortcodes/section-title';
+
+/* Separator styles
+   ========================================================================== */
+@import 'modules/shortcodes/separator';
+
+/* Social Share styles
+   ========================================================================== */
+@import 'modules/shortcodes/socialshare';
+
+/* Tabs styles
+   ========================================================================== */
+@import 'modules/shortcodes/tabs';
+
+/* Team styles
+   ========================================================================== */
+@import 'modules/shortcodes/team';
+
+
+/* Testimonials styles
+   ========================================================================== */
+@import 'modules/shortcodes/testimonials';
+
+
+/* Video Button styles
+   ========================================================================== */
+@import 'modules/shortcodes/video-button';
+
+/* ==========================================================================
+   11. Widgets styles
+   ========================================================================== */
+@import 'modules/widgets/widgets/instagram';
+@import 'modules/widgets/widgets/twitter';
+@import 'modules/widgets/widgets/social-icon';
+@import 'modules/widgets/widgets/blog-list-widget';
+@import 'modules/widgets/widgets/separator';
+// default wp widgets
+@import 'modules/widgets/sidebar';
+@import 'modules/widgets/footer';
+@import 'modules/widgets/sidearea';
+
+/* ==========================================================================
+   12. Plugins styles
+   ========================================================================== */
+@import 'modules/plugins/owl.carousel';
+@import 'modules/plugins/prettyPhoto';
+@import 'modules/plugins/wpml';
+@import 'modules/plugins/animate';
+/* ==========================================================================
+   13. Popup styles
+   ========================================================================== */
+@import 'modules/popup/popup';

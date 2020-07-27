@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.qodef-section-title-holder {
+    @include qodefRelativeHolderLayout();
+    
+    .qodef-st-title {
+	    display: block;
+        margin: 0;
+    }
+    
+    .qodef-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

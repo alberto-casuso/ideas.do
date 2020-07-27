@@ -1,0 +1,38 @@
+.qodef-blog-list-holder {
+    &.qodef-bl-simple {
+
+        .qodef-post-title {
+            margin: 0;
+            font-size: 15px;
+            a{
+              color: #000000;
+            }
+
+        }
+
+        .qodef-post-info-date {
+            a{
+              font-size: 11px;
+              font-family: Montserrat, sans-serif;
+              text-transform: uppercase;
+              color: #9a9a9a;
+            }
+        }
+
+        .qodef-post-image {
+            width: 55px;
+            display: table-cell;
+            vertical-align: top;
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .qodef-bli-content {
+            display: table-cell;
+            vertical-align: middle;
+            width: auto;
+            padding-left: 20px;
+        }
+    }
+}

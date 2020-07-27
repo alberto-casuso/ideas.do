@@ -1,0 +1,77 @@
+.qodef-blog-slider-holder {
+    &.qodef-bls-boxed {
+        .qodef-blog-slider-item {
+            .qodef-item-text-wrapper {
+                padding: 100px;
+                box-sizing: border-box;
+            }
+            .qodef-item-text-holder {
+                position: relative;
+                display: table;
+                table-layout: fixed;
+                width: auto;
+                height: auto;
+                padding: 66px 93px 56px;
+                top: 50%;
+                left: 50%;
+                @include qodefTransform(translate(-50%, -50%));
+                background-color: rgba(#fff, .95);
+                .qodef-item-info-section-top {
+                    margin-bottom: 3px;
+                    a {
+                        color: inherit;
+                    }
+                    .qodef-post-info-category {
+                        a {
+                            font-family: Montserrat, sans-serif;
+                            font-size: 13px;
+                            font-weight: 700;
+                            line-height: 18px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            text-decoration: underline;
+                            color: $first-main-color;
+                        }
+                    }
+                }
+                .qodef-item-info-section-bottom {
+                    a {
+                        color: inherit;
+                    }
+                    .qodef-post-info-author,
+                    .qodef-post-info-date {
+                        display: inline-block;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    .qodef-post-info-author {
+                        &:after {
+                            content: "/";
+                        }
+                    }
+                }
+            }
+            .qodef-item-text-holder-inner {
+                @include qodefTableCellLayout();
+            }
+            .qodef-section-button-holder {
+                margin-top: 25px;
+            }
+        }
+        &.qodef-bls-centered {
+            .qodef-blog-slider-item {
+                .qodef-item-text-holder {
+                    background-color: rgba(#fff, 1);
+                    .qodef-item-info-section-bottom {
+                        margin-top: 5px;
+                    }
+                }
+                .qodef-section-button-holder {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
