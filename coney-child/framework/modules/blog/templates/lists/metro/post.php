@@ -55,8 +55,8 @@ else {
 <article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-5 post-info">
-                <div class="qodef-post-info">
+            <div class="col-5">
+                <div class="qodef-post-info-mcyy">
                         <div class="qodef-post-top-section-mcyy">
                             
                         </div>
