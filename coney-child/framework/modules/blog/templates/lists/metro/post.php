@@ -52,8 +52,8 @@ else {
         </div>
 
 </article-->
-<article id="post-<?php the_ID(); ?>" >
-    <div class="container" <?php post_class($post_classes); ?>>
+<article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
+    <div class="container">
         <div class="row">
             <div class="col-5 post-info">
                 <h4 itemprop="name" class="entry-title qodef-post-title">
