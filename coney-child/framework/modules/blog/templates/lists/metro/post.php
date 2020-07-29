@@ -79,7 +79,7 @@ else {
                 } else { ?>
                     <a itemprop="url" href="<?php echo esc_url( get_the_permalink() ); ?>" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-blog-list-button">
                         <span class="qodef-btn-text">
-                            <?php echo esc_html__( 'Read more', 'coney' ); ?>
+                            <?php echo esc_html__( 'YUMIIII', 'coney' ); ?>
                         </span>
                     </a>
                 <?php } ?>
