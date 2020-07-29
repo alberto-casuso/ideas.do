@@ -38,7 +38,10 @@ else {
         <div class="row">
             <div class="col-5 post-info">
                 <div class="post-info-mcyy">
-                        <div class="post-info-top-section-mcyy"></div>
+                        <div class="post-info-top-section-mcyy">
+                            <?php coney_qodef_get_module_template_part('templates/parts/post-info/date', 'blog', '', $part_params); ?>
+                            <?php coney_qodef_get_module_template_part('templates/parts/post-info/category', 'blog', '', $part_params); ?>
+                        </div>
                         <div class="post-info-text-main-mcyy">
                             <h4 itemprop="name" class="entry-title qodef-post-title">
                             <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
