@@ -52,7 +52,7 @@ else {
         </div>
 
 </article-->
-<article id="post-<?php the_ID(); ?>"  class="qodef-post-has-media qodef-post-size-large-width post-274 post type-post status-publish format-standard has-post-thumbnail hentry category-inspiration category-travel tag-creativity tag-health tag-inspiration tag-lists tag-new tag-recipes">
+<article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
     <div class="container">
         <div class="row">
             <div class="col-5 post-info">
