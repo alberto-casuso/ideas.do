@@ -55,7 +55,7 @@ else {
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_classes); ?>>
     <div class="container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-4">
                 <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <?php the_title(); ?>
                         </a>
@@ -85,7 +85,7 @@ else {
                     <div class="col"> </div>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col-8">
             <?php
 
             $featured_image_size = isset($featured_image_size) ? $featured_image_size : 'full';
