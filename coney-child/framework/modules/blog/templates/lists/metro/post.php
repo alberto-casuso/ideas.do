@@ -56,7 +56,7 @@ else {
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <?php coney_qodef_get_module_template_part('templates/parts/post-info/link-overlay', 'blog'); ?>
+                <?php //coney_qodef_get_module_template_part('templates/parts/post-info/link-overlay', 'blog'); ?>
                 <div class="qodef-post-info texto-blog-home">
                     <div class="qodef-post-top-section">
                         <?php coney_qodef_get_module_template_part('templates/parts/post-info/date', 'blog', '', $part_params); ?>
