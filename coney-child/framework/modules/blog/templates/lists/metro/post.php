@@ -71,7 +71,7 @@ else {
                                 'type'         => 'solid',
                                 'size'         => 'medium',
                                 'link'         => get_the_permalink(),
-                                'text'         => esc_html__( 'Read more', 'coney' ),
+                                'text'         => esc_html__( 'TEST YUMI', 'coney' ),
                                 'custom_class' => 'qodef-blog-list-button'
                             )
                         )
