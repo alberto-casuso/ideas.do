@@ -33,33 +33,12 @@ else {
     endswitch;
 }
 ?>
-<!--article id="post-< ?php the_ID(); ?>" < ?php post_class($post_classes); ?>>
-        < ?php coney_qodef_get_module_template_part('templates/parts/image', 'blog', '', $part_params); ?>
-
-        <-?php coney_qodef_get_module_template_part('templates/parts/post-info/link-overlay', 'blog'); ?>
-
-        <div class="qodef-post-info texto-blog-home">
-            <div class="qodef-post-top-section">
-                <-?php coney_qodef_get_module_template_part('templates/parts/post-info/date', 'blog', '', $part_params); ?>
-                <-?php coney_qodef_get_module_template_part('templates/parts/post-info/category', 'blog', '', $part_params); ?>
-            </div>
-            <div class="qodef-post-text-main">
-            <-?php coney_qodef_get_module_template_part('templates/parts/title', 'blog', '', $part_params); ?>
-            </div>
-            <div class="qodef-post-info-bottom">
-                <-?php coney_qodef_get_module_template_part('templates/parts/post-info/read-more', 'blog', '', $part_params); ?>
-            </div>
-        </div>
-
-</article-->
 <article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
     <div class="container-fluid">
         <div class="row">
             <div class="col-5 post-info">
-            <div class="post-info-mcyy">
-                        <div class="post-info-top-section-mcyy">
-                            
-                        </div>
+                <div class="post-info-mcyy">
+                        <div class="post-info-top-section-mcyy"></div>
                         <div class="post-info-text-main-mcyy">
                             <h4 itemprop="name" class="entry-title qodef-post-title">
                             <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -96,8 +75,8 @@ else {
 
            
                 <!--h4 itemprop="name" class="entry-title qodef-post-title">
-                <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                        <?php the_title(); ?>
+                <a itemprop="url" href="< ?php echo get_the_permalink(); ?>" title="< ?php the_title_attribute(); ?>">
+                        < ?php the_title(); ?>
                         </a>
                 </h4>
                 <div class="qodef-post-read-more-button">
@@ -116,12 +95,12 @@ else {
                             )
                         );
                     } else { ?>
-                        <a itemprop="url" href="<?php echo esc_url( get_the_permalink() ); ?>" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-blog-list-button">
+                        <a itemprop="url" href="< ?php echo esc_url( get_the_permalink() ); ?>" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-blog-list-button">
                             <span class="qodef-btn-text">
                                 < ?php echo esc_html__( 'Read more', 'coney' ); ?>
                             </span>
                         </a>
-                    <?php } ?>
+                    < ?php } ?>
                 </div-->
 
                
