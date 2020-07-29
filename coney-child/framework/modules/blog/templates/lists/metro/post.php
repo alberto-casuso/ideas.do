@@ -52,7 +52,7 @@ else {
         </div>
 
 </article-->
-<article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
+<article id="post-<?php the_ID(); ?>"  class="qodef-post-has-media qodef-post-size-large-width post-274 post type-post status-publish format-standard has-post-thumbnail hentry category-inspiration category-travel tag-creativity tag-health tag-inspiration tag-lists tag-new tag-recipes">
     <div class="container">
         <div class="row">
             <div class="col-5 post-info">
@@ -129,8 +129,8 @@ else {
 
             ?>
 
-            <!--div class="qodef-post-banner-holder">
-                <div class="qodef-post-banner-holder-inner"-->
+            <div class="qodef-post-banner-holder">
+                <div class="qodef-post-banner-holder-inner">
                     <?php if(isset($post_link) && $post_link != '') { ?>
                     <a itemprop="url" href="<?php echo esc_url($post_link); ?>" title="<?php the_title_attribute(); ?>" target="<?php echo esc_attr($post_target);?>" class="qodef-post-banner-link">
                         <?php } ?>
@@ -152,8 +152,8 @@ else {
                         <?php if(isset($post_link) && $post_link != '') { ?>
                     </a>
                 <?php } ?>
-                <!--/div>
-            </div-->
+                </div>
+            </div>
             <?php //coney_qodef_get_module_template_part('templates/parts/image', 'blog', '', $part_params); ?>
             </div>
         </div>
