@@ -55,10 +55,13 @@ else {
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_classes); ?>>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-5 post-info">
+                <h4 itemprop="name" class="entry-title qodef-post-title">
                 <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                         <?php the_title(); ?>
                         </a>
+                </h4>
+               
                 <?php //coney_qodef_get_module_template_part('templates/parts/post-info/link-overlay', 'blog'); ?>
                 <!--div class="qodef-post-info texto-blog-home">
                     <div class="qodef-post-top-section">
@@ -79,13 +82,8 @@ else {
                         < ?php coney_qodef_get_module_template_part('templates/parts/post-info/read-more', 'blog', '', $part_params); ?>
                     </div>
                 </div-->
-               
-                <div class="row post-info">
-                    <div class="col"></div>
-                    <div class="col"> </div>
-                </div>
             </div>
-            <div class="col-8">
+            <div class="col-7">
             <?php
 
             $featured_image_size = isset($featured_image_size) ? $featured_image_size : 'full';
