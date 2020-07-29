@@ -57,17 +57,17 @@ else {
         <div class="row">
             <div class="col-5 post-info">
                 <div class="qodef-post-info">
-                        <div class="qodef-post-top-section">
+                        <div class="qodef-post-top-section-mcyy">
                             
                         </div>
-                        <div class="qodef-post-text-main">
+                        <div class="qodef-post-text-main-mcyy">
                             <h4 itemprop="name" class="entry-title qodef-post-title">
                             <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                     <?php the_title(); ?>
                                     </a>
                             </h4>
                         </div>
-                        <div class="qodef-post-info-bottom">
+                        <div class="qodef-post-info-bottom-mcyy">
                             <div class="qodef-post-read-more-button">
                                 <?php
                                 if ( coney_qodef_core_plugin_installed() ) {
