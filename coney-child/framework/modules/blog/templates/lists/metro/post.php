@@ -39,42 +39,42 @@ else {
         <div class="row">
             <div class="col-5 post-info">
                 <div class="post-info-mcyy">
-                        <div class="post-info-top-section-mcyy">
-                            <?php coney_qodef_get_module_template_part('templates/parts/post-info/date', 'blog', '', $part_params); ?>
-                            <?php coney_qodef_get_module_template_part('templates/parts/post-info/category', 'blog', '', $part_params); ?>
-                        </div>
-                        <div class="post-info-text-main-mcyy">
-                            <h4 itemprop="name" class="entry-title qodef-post-title">
-                            <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                    <?php the_title(); ?>
-                            </a>
-                            </h4>
-                        </div>
-                        <div class="post-info-bottom-mcyy">
-                            <div class="qodef-post-read-more-button">
-                                <?php
-                                if ( coney_qodef_core_plugin_installed() ) {
-                                    echo coney_qodef_get_button_html(
-                                        apply_filters(
-                                            'coney_qodef_blog_template_read_more_button',
-                                            array(
-                                                'type'         => 'solid',
-                                                'size'         => 'medium',
-                                                'link'         => get_the_permalink(),
-                                                'text'         => esc_html__( 'Read more', 'coney' ),
-                                                'custom_class' => 'qodef-blog-list-button'
-                                            )
+                    <div class="post-info-top-section-mcyy">
+                        <?php coney_qodef_get_module_template_part('templates/parts/post-info/date', 'blog', '', $part_params); ?>
+                        <?php coney_qodef_get_module_template_part('templates/parts/post-info/category', 'blog', '', $part_params); ?>
+                    </div>
+                    <div class="post-info-text-main-mcyy">
+                        <h4 itemprop="name" class="entry-title qodef-post-title">
+                        <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <?php the_title(); ?>
+                        </a>
+                        </h4>
+                    </div>
+                    <div class="post-info-bottom-mcyy">
+                        <div class="qodef-post-read-more-button">
+                            <?php
+                            if ( coney_qodef_core_plugin_installed() ) {
+                                echo coney_qodef_get_button_html(
+                                    apply_filters(
+                                        'coney_qodef_blog_template_read_more_button',
+                                        array(
+                                            'type'         => 'solid',
+                                            'size'         => 'medium',
+                                            'link'         => get_the_permalink(),
+                                            'text'         => esc_html__( 'Read more', 'coney' ),
+                                            'custom_class' => 'qodef-blog-list-button'
                                         )
-                                    );
-                                } else { ?>
-                                    <a itemprop="url" href="<?php echo esc_url( get_the_permalink() ); ?>" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-blog-list-button">
-                                        <span class="qodef-btn-text">
-                                            <?php echo esc_html__( 'Read more', 'coney' ); ?>
-                                        </span>
-                                    </a>
-                                <?php } ?>
-                            </div>
+                                    )
+                                );
+                            } else { ?>
+                                <a itemprop="url" href="<?php echo esc_url( get_the_permalink() ); ?>" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-blog-list-button">
+                                    <span class="qodef-btn-text">
+                                        <?php echo esc_html__( 'Read more', 'coney' ); ?>
+                                    </span>
+                                </a>
+                            <?php } ?>
                         </div>
+                    </div>
                 </div>
             </div>
             <div class="col-7">
@@ -102,7 +102,7 @@ else {
                 <div class="qodef-post-banner-holder">
                     <div class="qodef-post-banner-holder-inner">
                         <?php if(isset($post_link) && $post_link != '') { ?>
-                        <a itemprop="url" href="<?php echo esc_url($post_link); ?>" title="<?php the_title_attribute(); ?>" target="<?php echo esc_attr($post_target);?>" class="qodef-post-banner-link">
+                        <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>" target="<?php echo esc_attr($post_target);?>" class="qodef-post-banner-link">
                             <?php } ?>
                             <?php if($has_featured) { ?>
                                 <div class="qodef-post-banner-image">
