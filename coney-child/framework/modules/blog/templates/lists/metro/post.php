@@ -63,7 +63,14 @@ else {
                         < ?php coney_qodef_get_module_template_part('templates/parts/post-info/category', 'blog', '', $part_params); ?>
                     </div>
                     <div class="qodef-post-text-main">
-                    <?php coney_qodef_get_module_template_part('templates/parts/title', 'blog', '', $part_params); ?>
+                    <?php //coney_qodef_get_module_template_part('templates/parts/title', 'blog', '', $part_params); ?>
+
+
+
+                        <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_title(); ?>
+                        </a>
+
                     </div>
                     <div class="qodef-post-info-bottom">
                         < ?php coney_qodef_get_module_template_part('templates/parts/post-info/read-more', 'blog', '', $part_params); ?>
