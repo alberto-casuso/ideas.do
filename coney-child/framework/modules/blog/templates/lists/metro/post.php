@@ -37,7 +37,7 @@ else {
 <article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
     
         <div class="row">
-            <div class="col-6 col-sm-5 post-info">
+            <div class="col-12 col-sm-5 post-info">
                 <div class="post-info-mcyy">
                     <div class="post-info-top-section-mcyy">
                         <?php coney_qodef_get_module_template_part('templates/parts/post-info/date', 'blog', '', $part_params); ?>
@@ -77,7 +77,7 @@ else {
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-7">
+            <div class="col-12 col-sm-7">
                 <?php
 
                 $featured_image_size = isset($featured_image_size) ? $featured_image_size : 'full';
