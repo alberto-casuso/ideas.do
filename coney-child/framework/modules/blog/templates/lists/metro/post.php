@@ -55,19 +55,19 @@ else {
 <article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-5">
-                <div class="qodef-post-info-mcyy">
-                        <div class="qodef-post-top-section-mcyy">
+            <div class="col-5 post-info">
+            <div class="post-info-mcyy">
+                        <div class="post-info-top-section-mcyy">
                             
                         </div>
-                        <div class="qodef-post-text-main-mcyy">
+                        <div class="post-info-text-main-mcyy">
                             <h4 itemprop="name" class="entry-title qodef-post-title">
                             <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                     <?php the_title(); ?>
-                                    </a>
+                            </a>
                             </h4>
                         </div>
-                        <div class="qodef-post-info-bottom-mcyy">
+                        <div class="post-info-bottom-mcyy">
                             <div class="qodef-post-read-more-button">
                                 <?php
                                 if ( coney_qodef_core_plugin_installed() ) {
@@ -94,8 +94,35 @@ else {
                         </div>
                 </div>
 
-                
-                
+           
+                <!--h4 itemprop="name" class="entry-title qodef-post-title">
+                <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_title(); ?>
+                        </a>
+                </h4>
+                <div class="qodef-post-read-more-button">
+                    < ?php
+                    if ( coney_qodef_core_plugin_installed() ) {
+                        echo coney_qodef_get_button_html(
+                            apply_filters(
+                                'coney_qodef_blog_template_read_more_button',
+                                array(
+                                    'type'         => 'solid',
+                                    'size'         => 'medium',
+                                    'link'         => get_the_permalink(),
+                                    'text'         => esc_html__( 'Read more', 'coney' ),
+                                    'custom_class' => 'qodef-blog-list-button'
+                                )
+                            )
+                        );
+                    } else { ?>
+                        <a itemprop="url" href="<?php echo esc_url( get_the_permalink() ); ?>" target="_self" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-blog-list-button">
+                            <span class="qodef-btn-text">
+                                < ?php echo esc_html__( 'Read more', 'coney' ); ?>
+                            </span>
+                        </a>
+                    <?php } ?>
+                </div-->
 
                
                 <?php //coney_qodef_get_module_template_part('templates/parts/post-info/link-overlay', 'blog'); ?>
