@@ -53,7 +53,7 @@ else {
 
 </article-->
 <article id="post-<?php the_ID(); ?>"  <?php post_class($post_classes); ?>>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-5 post-info">
                 <h4 itemprop="name" class="entry-title qodef-post-title">
