@@ -56,6 +56,9 @@ else {
     <div class="container">
         <div class="row">
             <div class="col-sm">
+                <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_title(); ?>
+                        </a>
                 <?php //coney_qodef_get_module_template_part('templates/parts/post-info/link-overlay', 'blog'); ?>
                 <!--div class="qodef-post-info texto-blog-home">
                     <div class="qodef-post-top-section">
@@ -67,8 +70,8 @@ else {
 
 
 
-                        <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                        <?php the_title(); ?>
+                        <a itemprop="url" href="< ?php echo get_the_permalink(); ?>" title="< ?php the_title_attribute(); ?>">
+                        < ?php the_title(); ?>
                         </a>
 
                     </div>
