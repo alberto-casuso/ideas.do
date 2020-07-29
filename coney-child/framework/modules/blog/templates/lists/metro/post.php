@@ -101,9 +101,9 @@ else {
 
                 <div class="qodef-post-banner-holder">
                     <div class="qodef-post-banner-holder-inner">
-                        <?php if(isset($post_link) && $post_link != '') { ?>
+                        <?php //if(isset($post_link) && $post_link != '') { ?>
                         <a itemprop="url" href="<?php echo get_the_permalink(); ?>" title="<?php the_title_attribute(); ?>" target="<?php echo esc_attr($post_target);?>" class="qodef-post-banner-link">
-                            <?php } ?>
+                            <?php //} ?>
                             <?php if($has_featured) { ?>
                                 <div class="qodef-post-banner-image">
                                     <?php if(coney_qodef_return_has_media()) { ?>
@@ -119,9 +119,9 @@ else {
                             <?php } else { ?>
                                 <?php coney_qodef_get_module_template_part('templates/parts/title', 'blog', '', $title_params); ?>
                             <?php } ?>
-                            <?php if(isset($post_link) && $post_link != '') { ?>
+                            <?php // if(isset($post_link) && $post_link != '') { ?>
                         </a>
-                    <?php } ?>
+                    <?php // } ?>
                     </div>
                 </div>
                 <?php //coney_qodef_get_module_template_part('templates/parts/image', 'blog', '', $part_params); ?>
