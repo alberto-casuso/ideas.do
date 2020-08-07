@@ -11,7 +11,7 @@ get_header();
 coney_qodef_get_title();
 get_template_part('slider');
 ?>
-<div class="qodef-full-width mod-mcyy">
+<div class="qodef-full-width">
 	<div class="qodef-full-width-inner">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="qodef-columns-wrapper <?php echo esc_attr($qodef_sidebar_classes); ?>">
@@ -32,6 +32,4 @@ get_template_part('slider');
 		<?php endwhile; endif; ?>
 	</div>
 </div>
-<?php do_action('coney_qodef_before_container_close'); ?>
-<?php coney_qodef_get_blog_widget_area(); ?>
 <?php get_footer(); ?>
