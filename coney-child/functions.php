@@ -41,7 +41,7 @@ if ( ! function_exists( 'coney_qodef_child_theme_enqueue_scripts' ) ) {
 //cambiar permalink author
 function change_author_linkUrl() {
     global $wp_rewrite;
-    $wp_rewrite->author_base = 'IdeasDoPMI';
+    $wp_rewrite->author_base = '#';
     $wp_rewrite->author_structure = "/" . $wp_rewrite->author_base;
     add_rewrite_rule('usuario/([^/]+)/?$', 'index.php?author_name=$matches[1]', 'top');
 }
