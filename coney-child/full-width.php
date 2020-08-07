@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Full Width Child
+Template Name: Full Width
 */ 
 ?>
 <?php
@@ -11,7 +11,7 @@ get_header();
 coney_qodef_get_title();
 get_template_part('slider');
 ?>
-<div class="qodef-full-width">
+<div class="qodef-full-width mod-mcyy">
 	<div class="qodef-full-width-inner">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="qodef-columns-wrapper <?php echo esc_attr($qodef_sidebar_classes); ?>">
