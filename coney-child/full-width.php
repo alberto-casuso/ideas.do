@@ -32,5 +32,6 @@ get_template_part('slider');
 		<?php endwhile; endif; ?>
 	</div>
 </div>
+<?php do_action('coney_qodef_before_container_close'); ?>
 <?php coney_qodef_get_blog_widget_area(); ?>
 <?php get_footer(); ?>
