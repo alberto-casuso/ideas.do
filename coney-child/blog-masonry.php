@@ -10,7 +10,7 @@ $qodef_holder_params = coney_qodef_get_holder_params_blog();
 ?>
 <?php get_header(); ?>
 <?php coney_qodef_get_title(); ?>
-<?php get_template_part('slider-custom-pmi'); ?>
+<?php get_template_part('slider'); ?>
     <div class="<?php echo esc_attr($qodef_holder_params['holder']); ?>">
         <?php do_action('coney_qodef_after_container_open'); ?>
         <div class="<?php echo esc_attr($qodef_holder_params['inner']); ?>">
