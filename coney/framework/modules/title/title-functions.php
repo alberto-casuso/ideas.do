@@ -145,7 +145,7 @@ if(!function_exists('coney_qodef_get_title_text')) {
         //is current page search page?
         elseif (is_search()) {
             //get title for search page
-            $title = esc_html__('Search results for: ', 'coney') . get_search_query();
+            $title = esc_html__('Resultados: ', 'coney') . get_search_query();
         }
 
         //is single post page
