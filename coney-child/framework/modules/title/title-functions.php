@@ -127,7 +127,7 @@ if(!function_exists('coney_qodef_get_title_text')) {
         //is current page author archive?
         elseif (is_author()) {
             //get current author name
-            $title = esc_html__('Posts by', 'coney') . " " . get_the_author();
+            $title = esc_html__('Publicado por', 'coney') . " " . get_the_author();
         }
 
         //us current page category archive
@@ -145,7 +145,7 @@ if(!function_exists('coney_qodef_get_title_text')) {
         //is current page search page?
         elseif (is_search()) {
             //get title for search page
-            $title = esc_html__('Search results for: ', 'coney') . get_search_query();
+            $title = esc_html__('Resultados: ', 'coney') . get_search_query();
         }
 
         //is single post page
@@ -158,7 +158,7 @@ if(!function_exists('coney_qodef_get_title_text')) {
         elseif (is_404()) {
             //is 404 title text set in theme options?
 	        $title_404 = coney_qodef_options()->getOptionValue('404_title');
-	        $title = !empty($title_404) ? $title_404 : esc_html__('404 - Page not found', 'coney');
+	        $title = !empty($title_404) ? $title_404 : esc_html__('404 - Página no encontrada', 'coney');
         }
 
         //is WooCommerce installed and is shop or single product page?
@@ -302,7 +302,7 @@ if(!function_exists('coney_qodef_custom_breadcrumbs')) {
                 }
 
             } elseif ( is_search() ) {
-                $output .= $before . esc_html__('Search results for ', 'coney') . '"' . get_search_query() . '"' . $after;
+                $output .= $before . esc_html__('Resultados: ', 'coney') . '"' . get_search_query() . '"' . $after;
 
             } elseif ( is_day() ) {
                 $output .= '<a itemprop="url" '.coney_qodef_get_inline_style($bread_style).' href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a>' . $delimiter;
