@@ -5300,7 +5300,7 @@ msgid "Define styles for page breadcrumbs"
 msgstr ""
 
 #: framework/modules/title/title-functions.php:118
-msgid " Tag"
+msgid " Etiqueta"
 msgstr ""
 
 #: framework/modules/title/title-functions.php:130
