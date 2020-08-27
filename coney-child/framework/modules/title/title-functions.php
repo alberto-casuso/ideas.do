@@ -115,7 +115,7 @@ if(!function_exists('coney_qodef_get_title_text')) {
         //is current page tag archive?
         if (is_tag()) {
             //get title of current tag
-            $title = single_term_title("", false).esc_html__(' Tag', 'coney');
+            $title = single_term_title("", false).esc_html__(' - Etiqueta', 'coney');
         }
 
         //is current page date archive?
