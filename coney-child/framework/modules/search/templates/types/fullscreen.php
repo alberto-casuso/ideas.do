@@ -13,7 +13,7 @@
                     <div class="qodef-form-holder">
                         <div class="qodef-form-holder-inner">
                             <div class="qodef-field-holder">
-                                <input type="text" placeholder="<?php esc_attr_e( 'Search for...', 'coney' ); ?>" name="s" class="qodef-search-field" autocomplete="off"/>
+                                <input type="text" placeholder="<?php esc_attr_e( 'Buscar por...', 'coney' ); ?>" name="s" class="qodef-search-field" autocomplete="off"/>
                             </div>
                             <button type="submit" class="qodef-search-submit"><span class="icon_search "></span>
                             </button>
