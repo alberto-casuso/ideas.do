@@ -115,7 +115,7 @@ if(!function_exists('coney_qodef_get_title_text')) {
         //is current page tag archive?
         if (is_tag()) {
             //get title of current tag
-            $title = single_term_title("", false).esc_html__(' Tag', 'coney');
+            $title = single_term_title("", false).esc_html__(' - Etiqueta', 'coney');
         }
 
         //is current page date archive?
@@ -302,7 +302,7 @@ if(!function_exists('coney_qodef_custom_breadcrumbs')) {
                 }
 
             } elseif ( is_search() ) {
-                $output .= $before . esc_html__('Search results for ', 'coney') . '"' . get_search_query() . '"' . $after;
+                $output .= $before . esc_html__('Resultados: ', 'coney') . '"' . get_search_query() . '"' . $after;
 
             } elseif ( is_day() ) {
                 $output .= '<a itemprop="url" '.coney_qodef_get_inline_style($bread_style).' href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a>' . $delimiter;
