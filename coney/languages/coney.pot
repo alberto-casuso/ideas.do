@@ -3684,7 +3684,7 @@ msgstr ""
 #: framework/modules/blog/templates/parts/post-info/read-more-bs.php:23
 #: framework/modules/blog/templates/parts/post-info/read-more.php:11
 #: framework/modules/blog/templates/parts/post-info/read-more.php:19
-msgid "Read more"
+msgid "Leer más"
 msgstr ""
 
 #: framework/modules/blog/templates/parts/image.php:18
@@ -3698,7 +3698,7 @@ msgstr ""
 
 #: framework/modules/blog/templates/parts/pagination/load-more.php:18
 #: framework/modules/blog/templates/parts/pagination/load-more.php:25
-msgid "Load more"
+msgid "Ver más"
 msgstr ""
 
 #: framework/modules/blog/templates/parts/pagination/standard.php:21
@@ -3710,7 +3710,7 @@ msgid "Next"
 msgstr ""
 
 #: framework/modules/blog/templates/parts/post-info/author.php:3
-msgid "By"
+msgid "Por"
 msgstr ""
 
 #: framework/modules/blog/templates/parts/post-info/comments.php:3
@@ -3733,7 +3733,7 @@ msgstr ""
 
 #: framework/modules/blog/templates/parts/single/related-posts-carousel.php:28
 #: framework/modules/blog/templates/parts/single/related-posts.php:15
-msgid "Posts you'd might like"
+msgid "Artículos que pueden interesarte"
 msgstr ""
 
 #: framework/modules/blog/templates/parts/single/single-navigation.php:13
@@ -5308,7 +5308,7 @@ msgid "Posts by"
 msgstr ""
 
 #: framework/modules/title/title-functions.php:148
-msgid "Search results for: "
+msgid "Resultados: "
 msgstr ""
 
 #: framework/modules/title/title-functions.php:161
@@ -5324,7 +5324,7 @@ msgid "Home"
 msgstr ""
 
 #: framework/modules/title/title-functions.php:305
-msgid "Search results for "
+msgid "Resultados: "
 msgstr ""
 
 #: framework/modules/title/title-functions.php:384
@@ -6058,11 +6058,11 @@ msgid "Search Products..."
 msgstr ""
 
 #: search.php:21
-msgid "Type here"
+msgid "Busca nuevamente…"
 msgstr ""
 
 #: search.php:29
-msgid "If you are not happy with the results below please do another search"
+msgid "¿No encontraste lo que buscas? Prueba buscar otra palabra"
 msgstr ""
 
 #: search.php:62
@@ -6070,7 +6070,7 @@ msgid "No posts were found."
 msgstr ""
 
 #: searchform.php:4
-msgid "Search..."
+msgid "BUscar..."
 msgstr ""
 
 #: woocommerce/global/quantity-input.php:27
