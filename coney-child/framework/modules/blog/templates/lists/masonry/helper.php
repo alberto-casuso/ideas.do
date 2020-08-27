@@ -76,7 +76,7 @@ if( !function_exists('coney_qodef_blog_read_more_params') ) {
         $part_params = array();
         $part_params['type'] = 'transparent';
         $part_params['link'] = get_the_permalink();
-        $part_params['text'] = esc_html__('Read more', 'coney');
+        $part_params['text'] = esc_html__('Leer más', 'coney');
 
         return array_merge($params, $part_params);
     }
