@@ -1,0 +1,1 @@
+<p class="qodef-blog-no-posts"><?php esc_html_e('Lo siento, no hay resultados que coincidan con sus criterios.', 'coney'); ?></p>
