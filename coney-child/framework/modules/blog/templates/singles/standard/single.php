@@ -8,4 +8,4 @@ coney_qodef_get_module_template_part('templates/parts/single/single-navigation',
 
 coney_qodef_get_module_template_part('templates/parts/single/related-posts', 'blog', $related_posts_layout, $single_info_params);
 
-coney_qodef_get_module_template_part('templates/parts/single/comments', 'blog');
+//coney_qodef_get_module_template_part('templates/parts/single/comments', 'blog');
